@@ -1,0 +1,14 @@
+.pakty-btn-primary {
+  text-transform: uppercase !important;
+  background-color: #11f4bd;
+  border-color: #11f4bd;
+  color: #0a3556;
+  font-weight: 600;
+  height: 48px;
+}
+
+.has-link {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 16px;
+}
