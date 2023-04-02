@@ -6,7 +6,7 @@ export const CardImageContainer = ({ imageSrc, alt }) => {
   return (
     <div className={classes.imageContainer}>
       <Image src={imageSrc} responsive fill alt={'alt'} />{' '}
-      <LikeButton className="like-button" />{' '}
+      <LikeButton className="like-button" />
     </div>
   )
 }

@@ -1,1 +1,31 @@
+.ourShopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 50px;
+  background-color: #f1f9ff;
+}
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #0a3556;
+}
+.ourProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+}
 
+.discoverBtnContainer {
+  height: 100%;
+  min-width: 250px !important;
+  width: 267px;
+  max-width: 300px !important;
+  margin: auto;
+}

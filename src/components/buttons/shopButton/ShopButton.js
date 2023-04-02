@@ -1,5 +1,6 @@
 import { Button } from 'antd'
-import classes from './ShopButton.css'
+import FeatherIcon from 'feather-icons-react'
+import classes from './ShopButton.module.css'
 
 export const ShopButton = () => {
   return (
@@ -7,14 +8,10 @@ export const ShopButton = () => {
       className={classes['btn-shopping']}
       size="middle"
       shape="circle"
-      style={{
-        float: 'right',
-        color: '#fff',
-      }}
       icon={
         <FeatherIcon
           className="shopping-icon"
-          size={16}
+          size={14}
           icon={'shopping-cart'}
         />
       }
