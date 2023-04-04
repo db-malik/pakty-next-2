@@ -79,7 +79,7 @@ const HeaderComponent = () => {
       className={navbar ? 'normal' : 'header-custom'}
     >
       <Row>
-        <Col span={4}>
+        <Col span={6}>
           <Link href="/">
             <div
               style={{
@@ -122,20 +122,18 @@ const HeaderComponent = () => {
           />
         </Col>
         <Col xs={8} lg={0}></Col>
-        <Col lg={7} span={6}>
+        <Col span={6}>
           <Row>
             <Col xs={24} xl={20}>
               <Row>
-                <Col style={{ float: 'left' }} span={17}>
-                  <Link href="/user/dashbord">
-                    <div className={classes.btnContainer}>
-                      <PrimaryBtn showArrow={false}>
-                        Design my project
-                      </PrimaryBtn>
-                    </div>
-                  </Link>
+                <Col style={{ float: 'right' }} span={15}>
+                  <div className={classes.btnContainer}>
+                    <PrimaryBtn linkTo={'/user/dashbord'} showArrow={false}>
+                      Design my project
+                    </PrimaryBtn>
+                  </div>
                 </Col>
-                <Col xs={0} xl={6}>
+                <Col xs={0} xl={9}>
                   <FeatherIcon
                     onClick={() => {
                       navigateTo('/card')

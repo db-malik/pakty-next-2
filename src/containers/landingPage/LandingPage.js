@@ -7,6 +7,9 @@ import OurShop from '../../components/fragments/landingFragment/ourShop/OurShop'
 // import CardGalery from '../../components/cards/cardGallery/CardGalery'
 import Collection from '../../components/fragments/landingFragment/collection/Collection'
 import Slider from '../../components/fragments/landingFragment/slider/Slider'
+import WhyPakty from '../../components/fragments/landingFragment/whyPakty/WhyPakty'
+import PaktyApp from '../../components/fragments/landingFragment/paktyApp/PaktyApp'
+import OurBlog from '../../components/fragments/landingFragment/ourBlog/OurBlog'
 // import WhyPaktyComponent from '../../_components/_fragments/why-pakty'
 
 const LandingPage = () => {
@@ -24,6 +27,9 @@ const LandingPage = () => {
         numberCardGallery="1"
       />
       <OurShop />
+      <WhyPakty />
+      <PaktyApp />
+      <OurBlog />
       {/* <Collection color={'blue'} rows={2} />
       <OurShop /> */}
       {/* <WhyPaktyComponent></WhyPaktyComponent> */}

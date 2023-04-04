@@ -13,7 +13,7 @@ const Collection = ({ title, subtitle, numberCardGallery }) => {
       </div>
 
       {new Array(numberCardGallery).fill(null).map((_, index) => {
-        return <CardGalery />
+        return <CardGalery key={index} />
       })}
       <div className={classes.BtnContainer}>
         <PrimaryBtn children="EXPLORE ALL" />

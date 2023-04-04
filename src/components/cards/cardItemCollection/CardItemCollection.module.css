@@ -1,0 +1,8 @@
+.imageContainer {
+  display: block;
+}
+.LikeBtnContainer {
+  position: absolute;
+  right: 21px;
+  top: 20px;
+}

@@ -1,3 +1,13 @@
+/*
+   this card represente card of products in our shop section design contain :
+   - promotion and like (if showed = true)
+   - image
+   - title
+   - description (if showed = true)
+   - price
+   - shop Button  (if showed = true)
+*/
+
 import { Button, Col, Row } from 'antd'
 import Image from 'next/image'
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon'
@@ -6,12 +16,21 @@ import LikeButton from '../../buttons/likeButton/LikeButton'
 import classes from './ItemCard.module.css'
 import PromotionStatus from '../../molucules/promtionStatus/PromotionStatus'
 import { ShopButton } from '../../buttons/shopButton/ShopButton'
+import Link from 'next/link'
 
 const ItemCard = (props) => {
-  const { src, title, description, price, Promoted, isLikeable, showShop } =
-    props
+  const {
+    src,
+    title,
+    description,
+    price,
+    Promoted,
+    isLikeable,
+    showShop,
+    linkTo,
+  } = props
   return (
-    <div className={classes.cardContainer}>
+    <Link href={linkTo ? linkTo : '#'} className={classes.cardContainer}>
       <div className={classes.upperContent}>
         <div className={classes.PromotionStatusContainer}>
           {Promoted && <PromotionStatus />}
@@ -36,7 +55,7 @@ const ItemCard = (props) => {
           {showShop && <ShopButton />}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

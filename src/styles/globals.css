@@ -228,3 +228,8 @@ a {
 }
 
 /* ******************************* */
+.titleFragments {
+  font-size: 40px;
+  color: #0a3556;
+  font-weight: 700;
+}

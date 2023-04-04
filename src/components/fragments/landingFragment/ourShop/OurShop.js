@@ -9,7 +9,7 @@ const imgSrc = require('/src/assets/img/card-image.jpg')
 const OurShop = () => {
   return (
     <div className={classes.ourShopContainer}>
-      <h2 className={classes.title}>Our Shop</h2>
+      <div className={classes.title}>Our Shop</div>
       <div className={classes.ourProducts}>
         {ourShopData.map((item) => (
           <ItemCard

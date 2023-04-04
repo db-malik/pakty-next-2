@@ -1,0 +1,37 @@
+.container {
+  width: 376px;
+  height: 457px;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer {
+  position: relative;
+  width: 376px;
+  height: 227px;
+  border-radius: 24px 24px 0px 0px;
+  overflow: hidden;
+}
+.descriptionTop {
+  width: 313.69px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #112b3c;
+}
+.descriptionBottum {
+  width: 312.82px;
+  height: 66px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #112b3c;
+  opacity: 0.8;
+}
