@@ -1,0 +1,22 @@
+.container {
+  padding: 14px;
+  width: 60vw;
+}
+
+.filterTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #112b3c;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.button.ant-btn-default:not(:disabled):hover {
+  border: 2px solid #11f4bd;
+  color: #0a3556;
+}

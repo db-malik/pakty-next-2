@@ -5,6 +5,7 @@
   padding: 80px 0px;
   gap: 50px;
   background-color: #f1f9ff;
+  overflow-x: hidden;
 }
 .title {
   font-family: 'Montserrat';

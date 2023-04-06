@@ -1,5 +1,7 @@
 .container {
   height: 946px;
+  width: 100vw;
+  /* padding: 5vw; */
   background: #e7fff9;
   border-radius: 8px;
   display: flex;
@@ -28,7 +30,7 @@
   opacity: 0.8;
 }
 .imageContainer {
-  width: 1169px;
+  width: 92%;
   height: 578px;
   position: relative;
   overflow: hidden;

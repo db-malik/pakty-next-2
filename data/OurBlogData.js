@@ -11,7 +11,7 @@ export const ourBlogData = [
     title: 'Lorem ipsum dolor sit amet consectetur. Fermentum.',
     description:
       "Let'Start decorating your dream with Packty. Originate and Inspire what you want just with one click",
-    src: '/public/assets/img/app-slider.jpg',
+    src: '/assets/img/blog-img-2.jpg',
   },
 
   {
@@ -19,6 +19,6 @@ export const ourBlogData = [
     title: 'Lorem ipsum dolor sit amet consectetur. Fermentum.',
     description:
       "Let'Start decorating your dream with Packty. Originate and Inspire what you want just with one click",
-    src: '/src/assets/img/img-cont.jpg',
+    src: '/assets/img/ourblog-img-3.jpg',
   },
 ]

@@ -2,7 +2,7 @@ import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import CardGalery from '../../../cards/cardGallery/CardGalery'
 import classes from './Collection.module.css'
 
-const Collection = ({ title, subtitle, numberCardGallery }) => {
+const Collection = ({ title, subtitle, numberCardGallery, showbtn }) => {
   return (
     <div>
       <div className={classes['super-field']}>
@@ -15,9 +15,12 @@ const Collection = ({ title, subtitle, numberCardGallery }) => {
       {new Array(numberCardGallery).fill(null).map((_, index) => {
         return <CardGalery key={index} />
       })}
-      <div className={classes.BtnContainer}>
-        <PrimaryBtn children="EXPLORE ALL" />
-      </div>
+
+      {showbtn === true ? (
+        <div className={classes.BtnContainer}>
+          <PrimaryBtn children="EXPLORE ALL" />
+        </div>
+      ) : null}
     </div>
   )
 }
