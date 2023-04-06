@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  height: 56px !important;
+  width: fit-content !important;
+  border-color: transparent;
+  color: #0a3556;
+
+  box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
+}
+
+.iconContainer {
+  position: relative;
+  width: 24px;
+  height: 15px;
+}
+.filterIcon {
+  color: #11f4bd;
+  margin-right: 16px;
+}

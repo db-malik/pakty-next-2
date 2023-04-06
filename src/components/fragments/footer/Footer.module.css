@@ -1,19 +1,69 @@
-.custom-footer {
-  padding: 100px !important;
-  background-color: #0a3556 !important;
+.footerContainer {
+  width: 100vw;
+  padding-top: 100px;
+  height: 374px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #0a3556;
+  color: #fff;
+}
+
+.imageContainer {
+  position: relative;
+}
+.left,
+.midle,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+}
+.midle {
+  flex-direction: row;
+  justify-content: center;
+  gap: 5vw;
+  flex: 3;
+}
+.about,
+.company,
+.support {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footerItemTitle {
   color: #fff !important;
+  margin-bottom: 5px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
 }
-
-.footer-item.ant-list-item {
+.footerItem {
   color: #fff !important;
-  padding: 0px 12px 6px 24px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  padding: 4px !important;
 }
-
-.footer-item.ant-list-item.footer-item-title {
-  padding: 0px 24px 12px 24px;
+.RightFooterItem {
+  display: flex;
+  gap: 10px;
 }
-
-.newsletter.ant-input-affix-wrapper-sm {
-  padding: 11px;
-  border-radius: 9px;
+.newsletter {
+  width: 100%;
+  height: 45px;
+}
+.btnContainer {
+  position: relative;
+  width: 100%;
+  height: 45px;
 }

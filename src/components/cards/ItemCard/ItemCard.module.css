@@ -1,85 +1,40 @@
-/* .item-plan {
-  border-radius: 24px;
-  background-color: #fff;
-  box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
-  width: 360px;
-  height: 612px;
-}
-.item-plan .title-2 {
-  margin-bottom: 38px;
-}
-.item-plan li {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 160% !important;
-}
-.item-plan .price-2 {
-  margin-bottom: 46px;
-}
-.item-plan:not(:last-child) {
-  margin-right: 20px !important;
-}
-.container {
-  padding: 54px 31px 0 31px;
-}
-
-.image {
-  padding: 10px;
-}
-
-.card-body {
-  color: #0a3556;
-}
-
-.title {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.description {
-  font-size: 16px;
-  font-weight: 14px;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: 700;
-  color: #97da0a !important;
-}
-
-.title-2 {
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.price-2 {
-  font-size: 32px;
-  font-weight: 600;
-  color: #97da0a !important;
-}
-
-.btn-shopping {
-  border-color: transparent;
-  background-color: #0a3556 !important;
-}
-.shopping-icon {
-  margin: 3px 1.5px 0 0;
-} */
-
 .cardContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 277px;
   height: 350.91px;
+  padding: 4px 2px 20px 2px;
+  background-color: #ffffff;
   border: 0.965274px solid #e6e6e6;
   box-shadow: 3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.05);
   border-radius: 15.4444px;
 }
+.upperContent {
+  z-index: 99;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.likeButtonContainer {
+}
+.BottumContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 90%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  width: 90%;
+}
+
 .price {
   font-size: 18px;
   font-weight: 700;
@@ -99,4 +54,8 @@
 .description {
   font-size: 16px;
   font-weight: 14px;
+  margin: 10px 0;
+}
+
+.shopBtnContiner {
 }

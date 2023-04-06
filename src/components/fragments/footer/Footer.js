@@ -16,104 +16,67 @@ const FooterComponent = () => {
   // const location = useLocation();
   const router = useRouter()
   return (
-    <Footer
-      style={{
-        display:
-          router.pathname === '/login' ||
-          router.pathname === '/signup' ||
-          router.pathname === '/resetPassword' ||
-          router.pathname === '/user/customizedesign' ||
-          router.pathname === '/speener'
-            ? 'none'
-            : 'block',
-      }}
-      className={classes['custom-footer']}
-    >
-      <Row align={'middle'}>
-        <Col xs={12} sm={8} lg={6}>
-          <Image src={logo} alt="logo" width="112" />
-          <p>
-            pakty@gmail.com <br />
-            15 rue du meuble, Tunis 2015 <br />
-            +216 25 26 27 26
-          </p>
-          <Row>
-            <Col span={8}></Col>
-            <Col span={8}></Col>
-            <Col span={8}></Col>
-          </Row>
-        </Col>
-        <Col xs={12} sm={8} md={6} lg={4}>
-          <List>
-            <List.Item
-              className={`${classes['footer-item']} ${classes['footer-item-title']}`}
-            >
-              About
-            </List.Item>
-            <List.Item className={classes['footer-item']}>
-              Inspiration
-            </List.Item>
-            <List.Item className={classes['footer-item']}>Magazine</List.Item>
-            <List.Item className={classes['footer-item']}>Store</List.Item>
-          </List>
-        </Col>
-        <Col xs={12} sm={8} md={6} lg={4}>
-          <List>
-            <List.Item
-              className={`${classes['footer-item']} ${classes['footer-item-title']}`}
-            >
-              Company
-            </List.Item>
-            <List.Item className={classes['footer-item']}>Solution</List.Item>
-            <List.Item className={classes['footer-item']}>Contact Us</List.Item>
-            <List.Item className={classes['footer-item']}>FAQ</List.Item>
-          </List>
-        </Col>
-        <Col xs={12} sm={8} md={6} lg={4}>
-          <List>
-            <List.Item
-              className={`${classes['footer-item']} ${classes['footer-item-title']}`}
-            >
-              Support
-            </List.Item>
-            <List.Item className={classes['footer-item']}>Account</List.Item>
-            <List.Item className={classes['footer-item']}>
-              Terms & conditions
-            </List.Item>
-            <List.Item className={classes['footer-item']}>
-              Privacy policy
-            </List.Item>
-          </List>
-        </Col>
-        <Col sm={12} md={8} lg={6}>
-          <List>
-            <List.Item
-              className={`${classes['footer-item']} ${classes['footer-item-title']}`}
-            >
-              Subscribe Now
-            </List.Item>
-            <List.Item className={classes['footer-item']}>
-              <Row gutter={10} align={'middle'}>
-                <Col span={18}>
-                  <Input
-                    className="newsletter"
-                    size="small"
-                    placeholder="Your Email"
-                    prefix={
-                      <FeatherIcon className="text-green" icon={'mail'} />
-                    }
-                  />
-                </Col>
-                <Col span={6}>
-                  <Button className="pakty-btn-primary">
-                    <FeatherIcon className="text-white" icon="arrow-right" />
-                  </Button>
-                </Col>
-              </Row>
-            </List.Item>
-          </List>
-        </Col>
-      </Row>
+    <Footer className={classes.footerContainer}>
+      <div className={classes.left}>
+        <div className={classes.imageContainer}>
+          <Image src={logo} alt="logo" fill />
+        </div>
+
+        <p>
+          pakty@gmail.com <br />
+          15 rue du meuble, Tunis 2015 <br />
+          +216 25 26 27 26
+        </p>
+        <div className={classes.socialIcons}></div>
+      </div>
+      <div className={classes.midle}>
+        <List className={classes.about}>
+          <List.Item className={classes.footerItemTitle}>About</List.Item>
+          <List.Item className={classes.footerItem}>Inspiration</List.Item>
+          <List.Item className={classes.footerItem}>Magazine</List.Item>
+          <List.Item className={classes.footerItem}>Store</List.Item>
+        </List>
+
+        <List className={classes.company}>
+          <List.Item className={classes.footerItemTitle}>Company</List.Item>
+          <List.Item className={classes.footerItem}>Solution</List.Item>
+          <List.Item className={classes.footerItem}>Contact Us</List.Item>
+          <List.Item className={classes.footerItem}>FAQ</List.Item>
+        </List>
+
+        <List className={classes.support}>
+          <List.Item className={classes.footerItemTitle}>Support</List.Item>
+          <List.Item className={classes.footerItem}>Account</List.Item>
+          <List.Item className={classes.footerItem}>
+            Terms & conditions
+          </List.Item>
+          <List.Item className={classes.footerItem}>Privacy policy</List.Item>
+        </List>
+      </div>
+      <div className={classes.right}>
+        <List>
+          <List.Item className={classes.footerItemTitle}>
+            Subscribe Now
+          </List.Item>
+          <List.Item className={classes.RightFooterItem}>
+            <Input
+              className={classes.newsletter}
+              size="small"
+              placeholder="Your Email"
+              prefix={<FeatherIcon className="text-green" icon={'mail'} />}
+            />
+            <div className={classes.btnContainer}>
+              <Button className="pakty-btn-primary">
+                <FeatherIcon
+                  className="text-white"
+                  icon="arrow-right"
+                  style={{ color: '#fff' }}
+                />
+              </Button>
+            </div>
+          </List.Item>
+        </List>
+      </div>
     </Footer>
   )
 }

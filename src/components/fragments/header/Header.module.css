@@ -4,3 +4,61 @@
 .btnContainer {
   width: 200px;
 }
+
+.container {
+  transition: all 1s ease;
+  /* transition: color 0.2s ease; */
+
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
+  height: 96px;
+  padding: 0 50px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoContainer {
+  position: relative;
+  width: 108.73px;
+  height: 28.81px;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 2vw;
+}
+.active {
+  text-decoration: underline;
+}
+.navItem {
+  position: relative;
+}
+.navItem::after {
+  background-color: #fff;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+/* .UserNavContainer {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  justify-content: space-between;
+  list-style: none;
+} */

@@ -1,0 +1,26 @@
+import React from 'react'
+import CardBlog from '../../../cards/cardBlog/CardBlog'
+import classes from './OurBlog.module.css'
+
+// this array  is to mock data
+import { ourBlogData } from '/data/OurBlogData'
+const OurBlog = () => {
+  return (
+    <div className={classes.container}>
+      <div className="titleFragments">Our Blog</div>
+      <div className={classes.CardsContainer}>
+        {ourBlogData.map((item, index) => (
+          <CardBlog
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            imageSrc={item.src}
+            linkTo={`/blog/${item.id}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default OurBlog
