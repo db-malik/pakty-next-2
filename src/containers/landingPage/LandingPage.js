@@ -11,24 +11,23 @@ import PaktyApp from '../../components/fragments/landingFragments/paktyApp/Pakty
 import OurBlog from '../../components/fragments/landingFragments/ourBlog/OurBlog'
 import SliderLanding from '../../components/fragments/landingFragments/sliderLanding/SliderLanding'
 // import WhyPaktyComponent from '../../_components/_fragments/why-pakty'
-
+import classes from './LandingPage.module.css'
 const LandingPage = () => {
   return (
-    <div>
+    <div className={classes.slider}>
       <SliderLanding />
-
-      <Collection
-        title="Get inspired by our Collection"
-        subtitle="Discover our latest work by categories"
-        numberCardGallery={1}
-        showbtn={true}
-      />
-      <OurShop />
-      <WhyPakty />
-      <PaktyApp />
-      <OurBlog />
-
-      {/* <BecomeProComponent></BecomeProComponent> */}
+      <div className={classes.container}>
+        <Collection
+          title="Get inspired by our Collection"
+          subtitle="Discover our latest work by categories"
+          numberCardGallery={1}
+          showbtn={true}
+        />
+        <OurShop />
+        <WhyPakty />
+        <PaktyApp />
+        <OurBlog />
+      </div>
     </div>
   )
 }

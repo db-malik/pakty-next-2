@@ -16,7 +16,7 @@ const FooterComponent = () => {
   // const location = useLocation();
   const router = useRouter()
   return (
-    <Footer className={classes.footerContainer}>
+    <Footer className={classes.container}>
       <div className={classes.left}>
         <div className={classes.imageContainer}>
           <Image src={logo} alt="logo" fill />

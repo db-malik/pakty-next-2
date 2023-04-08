@@ -1,5 +1,5 @@
 .container {
-  width: 100vw;
+  width: 100%;
   position: relative;
   border-radius: 0px 0px 50px 50px;
 }
@@ -21,7 +21,7 @@
 }
 .title {
   flex: 1;
-  width: 479px;
+  width: 60%;
   /* height: 40px; */
   font-style: normal;
   font-weight: 700;
@@ -32,7 +32,7 @@
 .content {
   flex: 1;
 
-  width: 379px;
+  width: 50%;
   height: 62px;
   font-style: normal;
   font-weight: 600;

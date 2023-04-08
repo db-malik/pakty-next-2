@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import PrimaryBtn from '../buttons/PrimaryBtn/PrimaryBtn'
+import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import classes from './Slider.module.css'
 const Slider = ({ type, image, title, content, linkTo, buttonLabel }) => {
   return (
@@ -9,7 +9,7 @@ const Slider = ({ type, image, title, content, linkTo, buttonLabel }) => {
         style={type === 'home' ? { height: '115vh' } : { height: '80vh' }}
         className={classes.imageContainer}
       >
-        <Image src={image} fill />
+        <Image src={image} fill alt="image" />
       </div>
       <div
         style={type === 'home' ? { color: '#fff' } : { color: '#0A3556' }}

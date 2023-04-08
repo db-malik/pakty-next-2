@@ -8,7 +8,12 @@ const FilterButton = ({ iconSrc, label }) => {
     <Button className={classes.container} size="large">
       {iconSrc ? (
         <span className={classes.iconContainer}>
-          <Image className={classes.filterIcon} src={iconSrc} fill />
+          <Image
+            className={classes.filterIcon}
+            src={iconSrc}
+            fill
+            alt="image"
+          />
         </span>
       ) : null}
       <span>{label} </span>

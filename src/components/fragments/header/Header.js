@@ -73,7 +73,7 @@ const Header = () => {
           <Link
             key={index}
             href={item.link}
-            classeName={router.pathname === item.link ? 'active' : 'desactive'}
+            className={router.pathname === item.link ? 'active' : 'desactive'}
           >
             <li className={classes.navItem}>{item.label}</li>
           </Link>

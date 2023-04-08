@@ -1,6 +1,6 @@
 .container {
   height: 946px;
-  width: 100vw;
+  width: 100%;
   /* padding: 5vw; */
   background: #e7fff9;
   border-radius: 8px;
@@ -17,9 +17,9 @@
 }
 
 .subtitle {
-  width: 863px;
+  width: 80%;
   height: 52px;
-
+  margin: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
