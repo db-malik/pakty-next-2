@@ -14,7 +14,7 @@ const CardProductDetail = () => {
     productDetail
 
   // feat: on click image rendr bigger
-  const [clickedIndex, setClickedIndex] = useState(-1)
+  const [clickedIndex, setClickedIndex] = useState(0)
   const handleImageClick = (index) => {
     setClickedIndex(index)
   }
