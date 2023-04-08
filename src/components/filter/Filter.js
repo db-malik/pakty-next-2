@@ -7,9 +7,10 @@ import classes from './filter.module.css'
 import { categoriesData } from '/data/filterData'
 import FilterButton from '../buttons/filterButton/FilterButton'
 
-const Filter = ({ buttons }) => {
+const Filter = ({ title, buttons }) => {
   return (
     <div className={classes.container}>
+      <div className={classes.filterTitle}>{title}</div>
       <div className={classes.buttonsContainer}>
         {buttons.map((button, index) => (
           <FilterButton
@@ -27,10 +28,12 @@ const Filter = ({ buttons }) => {
 
 export default Filter
 
-Filter.propTypes = {
-  buttons: PropTypes.exact({
-    label: PropTypes.string,
-    iconSrc: PropTypes.string,
-    action: PropTypes.string,
-  }),
-}
+// Filter.propTypes = {
+//   buttons: PropTypes.exact([
+//     {
+//       label: PropTypes.string,
+//       iconSrc: PropTypes.string,
+//       action: PropTypes.string,
+//     },
+//   ]),
+// }
