@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 277px;
+  width: 300px;
   height: 350.91px;
   padding: 4px 2px 20px 2px;
   background-color: #ffffff;
   border: 0.965274px solid #e6e6e6;
-  box-shadow: 3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.05);
+  box-shadow: 3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.2);
   border-radius: 15.4444px;
 }
 .upperContent {
@@ -19,6 +19,12 @@
   justify-content: space-between;
 }
 .likeButtonContainer {
+}
+
+.imageContainer {
+  position: relative;
+  height: 40%;
+  width: 40%;
 }
 .BottumContent {
   display: flex;

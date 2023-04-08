@@ -18,17 +18,16 @@ import PromotionStatus from '../../molucules/promtionStatus/PromotionStatus'
 import { ShopButton } from '../../buttons/shopButton/ShopButton'
 import Link from 'next/link'
 
-const ItemCard = (props) => {
-  const {
-    src,
-    title,
-    description,
-    price,
-    Promoted,
-    isLikeable,
-    showShop,
-    linkTo,
-  } = props
+const ItemCard = ({
+  src,
+  title,
+  description,
+  price,
+  Promoted,
+  isLikeable,
+  showShop,
+  linkTo,
+}) => {
   return (
     <Link href={linkTo ? linkTo : '#'} className={classes.cardContainer}>
       <div className={classes.upperContent}>
@@ -41,7 +40,15 @@ const ItemCard = (props) => {
         </div>
       </div>
       <div className={classes.imageContainer}>
-        <Image src={src} />
+        <Image
+          src={src}
+          fill
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          alt="image"
+          priority
+        />
       </div>
       <div className={classes.BottumContent}>
         <div className={classes.content}>
