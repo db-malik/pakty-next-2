@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from '../../../slider/Slider'
+import Slider from '../../comonFragment/slider/Slider'
 import classes from './SliderLanding.module.css'
 const SliderLanding = () => {
   return (

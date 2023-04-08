@@ -4,7 +4,7 @@ import classes from './Collection.module.css'
 
 const Collection = ({ title, subtitle, numberCardGallery, showbtn }) => {
   return (
-    <div>
+    <div className={classes.container}>
       <div className={classes['super-field']}>
         {title ? <div className={classes['card-title']}>{title}</div> : null}
         {subtitle ? (

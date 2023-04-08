@@ -3,7 +3,7 @@ import React from 'react'
 import OurStore from '../../containers/ourStorePage/OurStore'
 import MainLayout from '../../layouts/mainLayout/MainLayout'
 
-const index = () => {
+const Store = () => {
   return (
     <>
       <Head
@@ -20,4 +20,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Store

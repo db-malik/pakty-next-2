@@ -1,0 +1,44 @@
+.container {
+  margin: 40px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.navlinks {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.listItem {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #0a3556;
+  padding: 10px 0;
+  opacity: 0.5;
+}
+.content {
+  width: 100%;
+
+  height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  padding: 10px;
+  color: #112b3c;
+  opacity: 0.8;
+}
+.active {
+  border-bottom: 2px #112b3c solid;
+  opacity: 1;
+}

@@ -15,8 +15,8 @@ const OurStore = () => {
         content=""
       />
 
-      <Filter title="Filter your product" buttons={ButtonsStoreFilter} />
-      <div>
+      <div className={classes.container}>
+        <Filter title="Filter your product" buttons={ButtonsStoreFilter} />
         <ProductsPagination allItems={allProductData} pageSize={16} />
       </div>
     </div>

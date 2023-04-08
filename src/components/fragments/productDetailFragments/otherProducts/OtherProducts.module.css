@@ -1,0 +1,21 @@
+.container {
+  margin: 50px 0;
+}
+.top {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #0a3556;
+  padding: 10px 0;
+}
+.productsContainer {
+  padding: 60px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
