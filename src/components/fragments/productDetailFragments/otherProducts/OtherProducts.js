@@ -1,14 +1,12 @@
 import React from 'react'
 import ItemCard from '../../../cards/ItemCard/ItemCard'
+import ExploreAllBar from '../../../molucules/exploreAllBar/ExploreAllBar'
 import classes from './OtherProducts.module.css'
 
 const OtherProducts = ({ products }) => {
   return (
     <div className={classes.container}>
-      <div className={classes.top}>
-        <span>You my also like</span>
-        <span>EXPLORE ALL </span>
-      </div>
+      <ExploreAllBar label="Also you may like " linkTo={'/store'} />
 
       <div className={classes.productsContainer}>
         {products.map((product) => (

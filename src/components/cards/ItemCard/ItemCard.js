@@ -34,7 +34,6 @@ const ItemCard = ({
         <div className={classes.PromotionStatusContainer}>
           {Promoted && <PromotionStatus />}
         </div>
-
         <div className={classes.likeButtonContainer}>
           {isLikeable && <LikeButton />}
         </div>

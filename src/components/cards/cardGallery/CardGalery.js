@@ -14,22 +14,46 @@ const CardGalery = () => {
   return (
     <div className={classes.parent}>
       <div className={`${classes.div1} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
       <div className={`${classes.div2} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
       <div className={`${classes.div3} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
       <div className={`${classes.div4} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
       <div className={`${classes.div5} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
       <div className={`${classes.div6} ${classes.images}`}>
-        <CardItemCollection imageSrc={imageSrc} />
+        <CardItemCollection
+          linkTo={'inspiration/detail/1'}
+          imageSrc={imageSrc}
+          islikeable={false}
+        />
       </div>
     </div>
   )

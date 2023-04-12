@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import React from 'react'
 import OurStore from '../../containers/ourStorePage/OurStore'
@@ -6,7 +7,7 @@ import MainLayout from '../../layouts/mainLayout/MainLayout'
 const Store = () => {
   return (
     <>
-      <Head
+      <NextSeo
         title="Pakty | Store"
         description="Discover our store and explore more about 3D furniture."
         author=""

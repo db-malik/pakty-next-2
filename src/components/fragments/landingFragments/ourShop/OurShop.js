@@ -19,11 +19,15 @@ const OurShop = () => {
             price={item.price}
             src={imgSrc}
             isLikeable={false}
+            linkTo="/store/product/63bc70042c7d2ce19d34fca3"
           />
         ))}
       </div>
       <div className={classes.discoverBtnContainer}>
-        <PrimaryBtn showArrow={true}> DISCOVER MORE</PrimaryBtn>
+        <PrimaryBtn linkTo={'/store'} showArrow={true}>
+          {' '}
+          DISCOVER MORE
+        </PrimaryBtn>
       </div>
     </div>
   )

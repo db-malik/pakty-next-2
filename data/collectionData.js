@@ -1,4 +1,4 @@
-const collectionData = [
+export const collectionData = [
   { id: 1, title: 'prod1', image: '/src/assets/img/Im_container.png' },
   { id: 2, title: 'prod1', image: '/src/assets/img/Im_container.png' },
   { id: 3, title: 'prod1', image: '/src/assets/img/Im_container.png' },
@@ -9,5 +9,3 @@ const collectionData = [
   { id: 8, title: 'prod1', image: '/src/assets/img/Im_container.png' },
   { id: 9, title: 'prod1', image: '/src/assets/img/Im_container.png' },
 ]
-
-export default collectionData

@@ -4,10 +4,10 @@ import classes from './OurBlog.module.css'
 
 // this array  is to mock data
 import { ourBlogData } from '/data/OurBlogData'
-const OurBlog = () => {
+const OurBlog = ({ showTitle }) => {
   return (
     <div className={classes.container}>
-      <div className="titleFragments">Our Blog</div>
+      {showTitle ? <div className="titleFragments">Our Blog</div> : null}
       <div className={classes.CardsContainer}>
         {ourBlogData.map((item, index) => (
           <CardBlog

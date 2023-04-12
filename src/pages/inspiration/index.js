@@ -1,13 +1,12 @@
-import Image from 'next/image'
-
 import Head from '../../layouts/head/Head'
 import MainLayout from '../../layouts/mainLayout/MainLayout'
 import InspirationPage from '../../containers/inspirationPage/InspirationPage'
+import { NextSeo } from 'next-seo'
 
 const Inspiration = () => {
   return (
     <>
-      <Head
+      <NextSeo
         title="Pakty | Inspiration"
         description="Pakty your space in 3D"
         author=""

@@ -1,0 +1,44 @@
+.get-mobile-app-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130% !important;
+  color: #0a3556;
+}
+.get-mobile-app-section {
+  max-width: 500px;
+}
+.get-mobile-app {
+  margin: 100px 0 145px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get-mobile-app-description {
+  margin: 60px 0 60px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160% !important;
+  color: #112b3c;
+  opacity: 0.8;
+}
+
+.buttons-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageContainer {
+  position: relative;
+  width: 208px;
+  height: 68.87px;
+}
+.phoneImageContainer {
+  position: relative;
+  width: 250.28px;
+  height: 541.95px;
+  margin-right: 100px;
+}

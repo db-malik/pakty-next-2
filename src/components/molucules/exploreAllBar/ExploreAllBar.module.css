@@ -1,0 +1,17 @@
+.container {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #0a3556;
+  padding: 10px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
