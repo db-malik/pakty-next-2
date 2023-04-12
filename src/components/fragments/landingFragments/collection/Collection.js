@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import CardGalery from '../../../cards/cardGallery/CardGalery'
 import classes from './Collection.module.css'
@@ -18,7 +19,7 @@ const Collection = ({ title, subtitle, numberCardGallery, showbtn }) => {
 
       {showbtn === true ? (
         <div className={classes.BtnContainer}>
-          <PrimaryBtn children="EXPLORE ALL" />
+          <PrimaryBtn linkTo={'/inspiration'} children="EXPLORE ALL" />
         </div>
       ) : null}
     </div>

@@ -19,7 +19,7 @@ const FooterComponent = () => {
     <Footer className={classes.container}>
       <div className={classes.left}>
         <div className={classes.imageContainer}>
-          <Image src={logo} alt="logo" fill />
+          <Image src="/assets/img/light-logo.png" alt="logo" fill />
         </div>
 
         <p>
@@ -32,25 +32,48 @@ const FooterComponent = () => {
       <div className={classes.midle}>
         <List className={classes.about}>
           <List.Item className={classes.footerItemTitle}>About</List.Item>
-          <List.Item className={classes.footerItem}>Inspiration</List.Item>
-          <List.Item className={classes.footerItem}>Magazine</List.Item>
-          <List.Item className={classes.footerItem}>Store</List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/inspiration"> Inspiration </Link>
+          </List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/magazine">Magazine</Link>{' '}
+          </List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/store">Store</Link>{' '}
+          </List.Item>
         </List>
 
         <List className={classes.company}>
           <List.Item className={classes.footerItemTitle}>Company</List.Item>
-          <List.Item className={classes.footerItem}>Solution</List.Item>
-          <List.Item className={classes.footerItem}>Contact Us</List.Item>
-          <List.Item className={classes.footerItem}>FAQ</List.Item>
+          <List.Item className={classes.footerItem}>
+            <Link href="/solution"> Solution</Link>
+          </List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/#"> Contact Us </Link>{' '}
+          </List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/#">FAQ</Link>{' '}
+          </List.Item>
         </List>
 
         <List className={classes.support}>
-          <List.Item className={classes.footerItemTitle}>Support</List.Item>
-          <List.Item className={classes.footerItem}>Account</List.Item>
+          <List.Item className={classes.footerItemTitle}> Support</List.Item>
           <List.Item className={classes.footerItem}>
-            Terms & conditions
+            {' '}
+            <Link href="/#">Account</Link>
           </List.Item>
-          <List.Item className={classes.footerItem}>Privacy policy</List.Item>
+          <List.Item className={classes.footerItem}>
+            <Link href="/#">Terms & conditions</Link>
+          </List.Item>
+          <List.Item className={classes.footerItem}>
+            {' '}
+            <Link href="/#">Privacy policy</Link>
+          </List.Item>
         </List>
       </div>
       <div className={classes.right}>

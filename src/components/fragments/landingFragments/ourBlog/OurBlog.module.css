@@ -1,11 +1,12 @@
 .container {
-  height: 745px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
+  gap: 50px;
+  padding: 40px 0;
 }
 
 .CardsContainer {

@@ -26,7 +26,7 @@ const LandingPage = () => {
         <OurShop />
         <WhyPakty />
         <PaktyApp />
-        <OurBlog />
+        <OurBlog showTitle={true} />
       </div>
     </div>
   )

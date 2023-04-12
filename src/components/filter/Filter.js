@@ -28,12 +28,12 @@ const Filter = ({ title, buttons }) => {
 
 export default Filter
 
-// Filter.propTypes = {
-//   buttons: PropTypes.exact([
-//     {
-//       label: PropTypes.string,
-//       iconSrc: PropTypes.string,
-//       action: PropTypes.string,
-//     },
-//   ]),
-// }
+Filter.propTypes = {
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      iconSrc: PropTypes.string,
+      label: PropTypes.string.isRequired,
+      action: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+}

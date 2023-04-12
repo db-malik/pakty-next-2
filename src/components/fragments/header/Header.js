@@ -51,6 +51,7 @@ const Header = () => {
     // adding the event when scroll change background
     window.addEventListener('scroll', changeBackground)
   })
+  console.log(router.pathname)
   return (
     <div
       className={`${classes.container}  ${navbar ? 'normal' : 'header-custom'}`}
@@ -73,15 +74,28 @@ const Header = () => {
           <Link
             key={index}
             href={item.link}
-            className={router.pathname === item.link ? 'active' : 'desactive'}
+            className={
+              router.pathname === item.link ? classes.active : classes.desactive
+            }
           >
-            <li className={classes.navItem}>{item.label}</li>
+            <li
+              className={
+                router.pathname === '/'
+                  ? classes.navItem
+                  : classes.nothomeNavItem
+              }
+            >
+              {item.label}
+            </li>
           </Link>
         ))}
 
         <li>|</li>
 
-        <li className={`${classes.loginLink}, ${classes.navItem}`}>login</li>
+        <Link href="/login">
+          {' '}
+          <li className={`${classes.loginLink}, ${classes.navItem}`}>login</li>
+        </Link>
         <li className={classes.btnContainer}>
           <PrimaryBtn showArrow={false} linkTo="">
             DESIGN MY PROJECT

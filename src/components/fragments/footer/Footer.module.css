@@ -11,6 +11,8 @@
 
 .imageContainer {
   position: relative;
+  width: 112.34px;
+  height: 28.81px;
 }
 .left,
 .midle,
@@ -31,7 +33,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 5vw;
-  flex: 3;
+  flex: 5;
 }
 .about,
 .company,

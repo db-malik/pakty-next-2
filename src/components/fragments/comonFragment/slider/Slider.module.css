@@ -21,7 +21,7 @@
 }
 .title {
   flex: 1;
-  width: 60%;
+  width: 70%;
   /* height: 40px; */
   font-style: normal;
   font-weight: 700;
@@ -32,7 +32,7 @@
 .content {
   flex: 1;
 
-  width: 50%;
+  width: 70%;
   height: 62px;
   font-style: normal;
   font-weight: 600;
@@ -42,7 +42,7 @@
 }
 .btnContainer {
   flex: 1;
-  width: 269px;
+  width: calc(100px + 10vw);
   height: 60px;
   background: #11f4bd;
   border-radius: 8px;

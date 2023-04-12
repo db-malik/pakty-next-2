@@ -1,25 +1,25 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-import ProductDetailPage from '../../../containers/productDetailPage/ProductDetailPage'
+import React from 'react'
+import InspirationDetailPage from '../../../containers/InspirationDetailpage/InspirationDetailPage'
+
 import MainLayout from '../../../layouts/mainLayout/MainLayout'
 
-const Product = () => {
-  const router = useRouter()
-  const { id } = router.query
+const InspirationDetail = () => {
   return (
     <>
-      <Head
-        title="Pakty | Prodcut"
+      <NextSeo
+        title="Pakty | Inspiration Detail"
         description="Pakty your space in 3D"
         author=""
         keywords="Visualize 3D furnitures in your project before shopping"
         image=""
       />
       <MainLayout>
-        <ProductDetailPage productId={id} />
+        <InspirationDetailPage />
       </MainLayout>
     </>
   )
 }
 
-export default Product
+export default InspirationDetail
