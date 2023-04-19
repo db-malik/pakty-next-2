@@ -12,21 +12,39 @@ import OurBlog from '../../components/fragments/landingFragments/ourBlog/OurBlog
 import SliderLanding from '../../components/fragments/landingFragments/sliderLanding/SliderLanding'
 // import WhyPaktyComponent from '../../_components/_fragments/why-pakty'
 import classes from './LandingPage.module.css'
+
+//mock data
+import { collectionData } from '/data/collectionData'
+import BecomePro from '../../components/fragments/landingFragments/becomePro/BecomePro'
+
 const LandingPage = () => {
+  const prod = collectionData
   return (
     <div className={classes.slider}>
       <SliderLanding />
-      <div className={classes.container}>
+      <div className="containerWhite">
         <Collection
           title="Get inspired by our Collection"
           subtitle="Discover our latest work by categories"
           numberCardGallery={1}
           showbtn={true}
+          onePageProducts={prod}
         />
+      </div>
+      <div className="containerColored">
         <OurShop />
+      </div>
+      <div className="containerWhite">
         <WhyPakty />
+      </div>
+      <div className="containerColored">
         <PaktyApp />
+      </div>
+      <div className="containerWhite">
         <OurBlog showTitle={true} />
+      </div>
+      <div className="containerColored">
+        <BecomePro />
       </div>
     </div>
   )

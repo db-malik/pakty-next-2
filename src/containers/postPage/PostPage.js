@@ -15,7 +15,7 @@ const PostPage = ({ postData }) => {
     postData
 
   return (
-    <div className={classes.container}>
+    <div className={classes.containerColored}>
       <div className={classes.topPostcontainer}>
         <div className={classes.TopImageContainer}>
           <Image src={image} fill alt="post image" />
@@ -63,8 +63,10 @@ const PostPage = ({ postData }) => {
           <p className={classes.textbody}> {endPost}</p>
         </div>
       </div>
+      <div className={classes.exploreAll}>
+        <ExploreAllBar label="Also you may like" linkTo={'/magazine'} />
+      </div>
 
-      <ExploreAllBar label="Also you may like" linkTo={'/magazine'} />
       <OurBlog />
     </div>
   )

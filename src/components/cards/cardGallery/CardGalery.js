@@ -6,55 +6,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import classes from './CardGalery.module.css'
-const imageSrc = require('/src/assets/img/Im_container.png')
-// import ima from '../../../assets/img/p1.png'
+
 import CardItemCollection from '../cardItemCollection/CardItemCollection'
 
-const CardGalery = () => {
+const CardGalery = ({ sixProducts }) => {
   return (
-    <div className={classes.parent}>
-      <div className={`${classes.div1} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
-      <div className={`${classes.div2} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
-      <div className={`${classes.div3} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
-      <div className={`${classes.div4} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
-      <div className={`${classes.div5} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
-      <div className={`${classes.div6} ${classes.images}`}>
-        <CardItemCollection
-          linkTo={'inspiration/detail/1'}
-          imageSrc={imageSrc}
-          islikeable={false}
-        />
-      </div>
+    <div className={classes.container}>
+      {sixProducts.map((product, index) => (
+        <div className={`${classes[`div${index + 1}`]} ${classes.images}`}>
+          <CardItemCollection
+            linkTo={`inspiration/detail/${product._id}`}
+            imageSrc={product.image}
+            islikeable={false}
+          />
+        </div>
+      ))}
     </div>
   )
 }

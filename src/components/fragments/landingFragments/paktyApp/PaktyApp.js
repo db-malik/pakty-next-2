@@ -7,7 +7,8 @@ const PaktyApp = () => {
       <CardPaktyApp
         title="Pakty app is practical and easy to use."
         subtitle="All you need to do is try and choose your design. We created a cozy and suitable atmosphere to work comfortably and explore your creative side."
-        imageSrc={require('/src/assets/img/app-fragment.jpg')}
+        imageSrc="/assets/img/app-fragment.jpg"
+        backgroundColor="#e7fff9"
       ></CardPaktyApp>
     </div>
   )

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 300px;
+  width: clamp(200px, 25vw, 280px);
   height: 350.91px;
   padding: 4px 2px 20px 2px;
   background-color: #ffffff;

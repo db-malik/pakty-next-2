@@ -1,12 +1,13 @@
 .container {
   width: 100%;
   padding-top: 100px;
-  height: 374px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   background: #0a3556;
   color: #fff;
+  flex-wrap: wrap;
 }
 
 .imageContainer {

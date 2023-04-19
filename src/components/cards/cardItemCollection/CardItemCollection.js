@@ -9,18 +9,18 @@ import Link from 'next/link'
 import LikeButton from '../../buttons/likeButton/LikeButton'
 import classes from './CardItemCollection.module.css'
 const imageSrc = require('src/assets/img/Im_container.png')
-const CardItemCollection = ({ islikeable, imageSrc, alt, linkTo }) => {
+const CardItemCollection = ({ islikeable, imageSrc, linkTo }) => {
   return (
-    <div>
+    <>
       <Link href={linkTo ? linkTo : '#'} className={classes.imageContainer}>
-        <Image src={imageSrc} responsive fill alt={'alt'} />
+        <Image src={imageSrc} fill alt="image" />
         {islikeable ? (
           <div className={classes.LikeBtnContainer}>
             <LikeButton className="like-button" />
           </div>
         ) : null}
       </Link>
-    </div>
+    </>
   )
 }
 

@@ -10,13 +10,15 @@ const OurBlog = ({ showTitle }) => {
       {showTitle ? <div className="titleFragments">Our Blog</div> : null}
       <div className={classes.CardsContainer}>
         {ourBlogData.map((item, index) => (
-          <CardBlog
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            imageSrc={item.src}
-            linkTo={`/blog/${item.id}`}
-          />
+          <div className={classes.cardContainer}>
+            <CardBlog
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              imageSrc={item.src}
+              linkTo={`/blog/${item.id}`}
+            />
+          </div>
         ))}
       </div>
     </div>

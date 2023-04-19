@@ -17,7 +17,7 @@ const MagazinePage = () => {
         linkTo=""
         buttonLabel=""
       />
-      <div className={classes.container}>
+      <div className="containerColored">
         <Filter
           title="Categories"
           buttons={[
@@ -27,6 +27,7 @@ const MagazinePage = () => {
             { label: 'Tipes & guides', action: 'types_guides' },
           ]}
         />
+
         <div className={classes.articles}>
           {articles.map((article, index) => (
             <CardArticle key={index} article={article} />

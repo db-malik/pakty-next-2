@@ -1,3 +1,9 @@
+/**
+ * This is a React component that renders a button with an optional icon and label.
+ * @returns The `FilterButton` component is being returned. It renders a button
+ * with an optional icon and a label. The icon is displayed using the `Image`
+ * component from Next.js. The component is styled using CSS modules.
+ */
 import React from 'react'
 import { Button } from 'antd'
 import classes from './FilterButton.module.css'

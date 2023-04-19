@@ -25,7 +25,8 @@
   /* height: 40px; */
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: calc(2vw + 2vh + 3vmin);
+
   /* line-height: 100%; */
   /* identical to box height, or 40px */
 }
@@ -36,7 +37,8 @@
   height: 62px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: calc(1vw + 3vmin);
+
   line-height: 130%;
   opacity: 0.8;
 }

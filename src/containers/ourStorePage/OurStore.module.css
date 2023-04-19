@@ -1,4 +1,13 @@
-.container {
-  width: 92%;
-  margin: auto;
+.containerWhite {
+  padding: 50px 4%;
+  background-color: #fff;
+}
+.containerColored {
+  padding: 50px 4%;
+  background-color: #f1f9ff;
+}
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

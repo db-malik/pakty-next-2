@@ -7,7 +7,7 @@ function CardBlog({ title, description, imageSrc, linkTo }) {
     <Link href={linkTo ? linkTo : '#'}>
       <div className={classes.container}>
         <div className={classes.imageContainer}>
-          <Image src={imageSrc} fill />
+          <Image src={imageSrc} fill alt="image" />
         </div>
         <div className={classes.description}>
           <div className={classes.descriptionTop}>{title}</div>

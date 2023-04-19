@@ -10,10 +10,11 @@
   max-width: 500px;
 }
 .get-mobile-app {
-  margin: 100px 0 145px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px 0;
 }
 .get-mobile-app-description {
   margin: 60px 0 60px 0;
@@ -38,7 +39,7 @@
 }
 .phoneImageContainer {
   position: relative;
-  width: 250.28px;
+  width: 30%;
   height: 541.95px;
   margin-right: 100px;
 }
