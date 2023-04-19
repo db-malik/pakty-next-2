@@ -79,3 +79,8 @@
 .nothomeNavItem:hover::after {
   width: 100%;
 }
+.userImageContainer {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}

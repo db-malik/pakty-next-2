@@ -1,4 +1,3 @@
-.container {
-  width: 92%;
-  margin: auto;
+.containerFragment > * {
+  padding: 40px 0;
 }

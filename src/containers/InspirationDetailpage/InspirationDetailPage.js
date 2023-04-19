@@ -15,7 +15,7 @@ const InspirationDetailPage = ({ _id }) => {
   const { title, author, image, content, categories } = inspirationDetailData
 
   return (
-    <div className={classes.container}>
+    <div className="containerColored">
       <div className={classes.DetailContainer}>
         <div className={classes.imageContainer}>
           <Image src={image} fill alt="image" />

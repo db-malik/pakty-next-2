@@ -10,34 +10,60 @@ import PrimaryBtn from '../../buttons/PrimaryBtn/PrimaryBtn'
 import classes from './cardBigMedia.module.css'
 
 const CardBigMedia = ({
-  imageSrc,
-  VideoSrc,
   title,
   description1,
   description2,
   buttonContent,
   linkTo,
+  child,
+  // mediaPosition placed in 'left' by default but if its  equal to 'right it wil be placed in the right of container
+  mediaPosition,
 }) => {
   return (
     <div className={classes.cardContainer}>
-      <div className={classes.mediaContainer}>
-        {imageSrc ? <Image src={imageSrc} fill alt="img" /> : null}
-        {/* {VideoSrc ? <ReactPlayer url={VideoSrc} /> : null} */}
-      </div>
-      <div className={classes.contentContainer}>
-        <h2 className={classes.title}>{title}</h2>
-        <div className={classes.descriptionContainer}>
-          <div> {description1}</div>
-          <br />
-          <div> {description2}</div>
-        </div>
+      {mediaPosition === 'right' ? (
+        <>
+          <div className={classes.contentContainer}>
+            <h2 className={classes.title}>{title}</h2>
+            <div className={classes.descriptionContainer}>
+              <div> {description1}</div>
+              <br />
+              <div> {description2}</div>
+            </div>
 
-        <div className={classes.buttonContainer}>
-          <PrimaryBtn showArrow={true} linkTo={linkTo}>
-            {buttonContent}
-          </PrimaryBtn>
-        </div>
-      </div>
+            <div className={classes.buttonContainer}>
+              <PrimaryBtn showArrow={true} linkTo={linkTo}>
+                {buttonContent}
+              </PrimaryBtn>
+            </div>
+          </div>
+          <div className={classes.mediaContainer}>
+            {/* child : you can enter any type of  dom element video , image inside child */}
+            {child}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className={classes.mediaContainer}>
+            {/* child : you can enter any type of  dom element video , image inside child */}
+            {child}
+          </div>
+          <div className={classes.contentContainer}>
+            <h2 className={classes.title}>{title}</h2>
+            <div className={classes.descriptionContainer}>
+              <div> {description1}</div>
+              <br />
+              <div> {description2}</div>
+            </div>
+
+            <div className={classes.buttonContainer}>
+              <PrimaryBtn showArrow={true} linkTo={linkTo}>
+                {buttonContent}
+              </PrimaryBtn>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   )
 }

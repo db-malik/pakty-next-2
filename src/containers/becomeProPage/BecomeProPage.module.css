@@ -1,0 +1,12 @@
+.container {
+  width: 92%;
+  margin: auto;
+  padding: 40px 0;
+}
+.desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  color: #112b3c;
+  padding: 50px 0;
+}

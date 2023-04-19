@@ -3,9 +3,7 @@ import React from 'react'
 import classes from './DownloadPaktyApp.module.css'
 const DownloadPaktyApp = () => {
   return (
-    <div
-      className={`${classes['get-mobile-app']} d-flex justify-content-around align-items-center`}
-    >
+    <div className={`${classes['get-mobile-app']}`}>
       <div className={classes['get-mobile-app-section']}>
         <span className={classes['get-mobile-app-title']}>
           Download Pakty app

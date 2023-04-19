@@ -11,7 +11,7 @@ const OurShop = () => {
     <div className={classes.ourShopContainer}>
       <div className={classes.title}>Our Shop</div>
       <div className={classes.ourProducts}>
-        {ourShopData.map((item) => (
+        {ourShopData.slice(0, 4).map((item) => (
           <ItemCard
             key={item.id}
             title={item.title}

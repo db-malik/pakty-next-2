@@ -3,6 +3,8 @@ import React from 'react'
 import OurSolutionPage from '../../containers/ourSolutionPage/OurSolutionPage'
 import Head from '../../layouts/head/Head'
 import MainLayout from '../../layouts/mainLayout/MainLayout'
+
+import classes from './style.module.css'
 const solution = () => {
   return (
     <>
@@ -14,7 +16,9 @@ const solution = () => {
         image=""
       />
       <MainLayout>
-        <OurSolutionPage />
+        <div className={classes.container}>
+          <OurSolutionPage />
+        </div>
       </MainLayout>
     </>
   )

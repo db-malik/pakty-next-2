@@ -228,3 +228,456 @@ a {
   color: #0a3556;
   font-weight: 700;
 }
+
+.containerWhite {
+  padding: 50px 4%;
+  background-color: #fff;
+}
+.containerColored {
+  padding: 50px 4%;
+  background-color: #f1f9ff;
+}
+/* ********************************** */
+.progreesBarProess {
+  padding-left: 0px !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.card-footer {
+  background-color: transparent !important;
+  border-top: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.margT {
+  margin-top: 35rem;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  width: 202px;
+  height: 48px;
+  background: #11f4bd;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0a3556;
+  margin-bottom: 3rem;
+}
+.select-file {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 36px;
+  width: 128px !important;
+  color: #0a3556;
+  height: 41px;
+  text-transform: uppercase;
+  background: #fbfdfe;
+  border: 1px solid #0a3556;
+  border-radius: 5px;
+}
+.select-file:hover {
+  background-color: transparent;
+  color: #0a3556;
+}
+.para_drag_drop {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #0a3556;
+}
+.para_type_filee {
+  font-family: 'Montserrat' !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #0a3556 !important;
+  opacity: 0.5 !important;
+}
+.Next-sendRequest {
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  width: 202px;
+  height: 48px;
+  background: #11f4bd;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0a3556;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.Next-sendRequest:hover {
+  background: #11f4bd;
+  color: #0a3556;
+}
+.Next-sendRequest:focus {
+  background: #11f4bd;
+  color: #0a3556;
+}
+.sendRequest:hover {
+  background: #11f4bd;
+  color: #0a3556;
+}
+.sendRequest:focus {
+  background: #11f4bd;
+  color: #0a3556;
+}
+
+.sendRequest {
+  width: 238px;
+  height: 37px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0a3556;
+  background: #11f4bd !important;
+  padding: 9px 38px;
+  border: none;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 36px;
+  width: 128px !important;
+  color: #0a3556;
+  height: 41px;
+  text-transform: uppercase;
+  background: #fbfdfe;
+  border: 1px solid #0a3556;
+  border-radius: 5px;
+  padding-left: 21px;
+}
+/* ------------------------------------Page Two-------------- */
+.input_1 {
+  width: 50%;
+  padding: 14px;
+}
+.input_1:focus {
+  border-color: #bbf3c5 !important;
+  box-shadow: 0 0 0 0.2px #86fe9a !important;
+  outline: 0;
+}
+.input_1:hover {
+  border: 1px solid #ced4da !important;
+}
+.select_pays {
+  width: 47%;
+  margin-left: 534px;
+  justify-content: end;
+  margin-top: -70px;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+.select_pays:focus {
+  border-color: #bbf3c5;
+  box-shadow: 0 0 0 0.2px #86fe9a;
+  outline: 0;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86fe9a;
+  outline: 0;
+  box-shadow: 0 0 0 0.2px #86fe9a;
+}
+.back {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0a3556;
+}
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.flexEnd {
+  display: flex;
+  justify-content: end;
+  margin: 47px 0 142px 0;
+}
+
+.displayNoneBaground {
+  background-color: transparent;
+  border: none;
+}
+.selectInput {
+  box-sizing: border-box;
+  padding: 11px 7px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  width: 49%;
+  margin-top: 29px;
+  margin-top: -60px;
+  margin-left: 579px;
+}
+.selectInput input::placeholder {
+  font-size: 15px;
+  color: #d9d9d9;
+}
+.PhoneInputInput {
+  border: none !important;
+}
+.PhoneInputInput:focus {
+  outline: none;
+}
+.textArea_description::placeholder {
+  font-size: 15px;
+  color: #d9d9d9;
+}
+.photos-added {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0a3556;
+}
+.images-tab {
+  position: absolute;
+  margin-top: 8rem !important;
+}
+.display {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+.img-upload {
+  margin-top: 28px !important;
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.img-upload img {
+  margin-right: 20px;
+  width: 277px;
+  height: 222px;
+  border: 0.965274px solid #e6e6e6;
+  filter: drop-shadow(3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.05));
+  border-radius: 15.4444px;
+}
+.upload-input {
+  position: relative;
+}
+
+.para_drag_dropp {
+  color: red !important;
+}
+
+@media screen and (max-width: 900px) {
+  .selectInput {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+  .input_1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .selectInput {
+    margin-left: 490px !important;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 999px) {
+  .selectInput {
+    margin-left: 366px !important;
+  }
+}
+
+/* * *********************** */
+.step {
+  color: white;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  background: #e0e0e7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.stepBg {
+  background-color: #fff;
+  width: 50px;
+}
+.RSPBprogressBar {
+  margin: 0px 14rem !important;
+  height: 3.19px;
+}
+.step.completed {
+  background: #11f4bd;
+}
+.bgwhite {
+  background-color: #fff;
+}
+
+.select-file {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  width: 122px;
+  color: #0a3556;
+  height: 41px;
+  text-transform: uppercase;
+  background: #fbfdfe;
+  border: 1px solid #0a3556;
+  border-radius: 5px;
+}
+.para-one {
+  text-align: left;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100% !important;
+  color: #0a3556;
+}
+.para-two {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160% !important;
+  color: #112b3c;
+  opacity: 0.8 !important;
+  text-align: justify;
+  margin-bottom: 52px;
+}
+.step_Process_Para {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 29px;
+  color: #0a3556;
+  margin-right: 15px;
+}
+
+.cardBodyStyle {
+  padding: 62px 0 68px 0;
+}
+
+.back a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0a3556;
+}
+.back {
+  margin: 73px 0 66px 0 !important;
+}
+.upload-section {
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .progress_bar {
+    padding: 0 !important;
+  }
+  .RSPBprogressBar {
+    margin: 0 2rem !important;
+  }
+  .progreesBarProess {
+    padding-left: 1em !important;
+  }
+  .para-one {
+    font-size: 16px;
+  }
+  .para-two {
+    font-size: 14px;
+  }
+  .cardBodyStyle {
+    padding: 2rem 1rem !important;
+  }
+  .img-upload {
+    margin-top: 10em !important;
+    margin-bottom: 5em;
+  }
+  .Next-sendRequest {
+    margin-right: 1em;
+    width: 130px;
+  }
+  .step_Process_Para {
+    font-size: 11px;
+    line-height: 18px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .para-one {
+    font-size: 20px;
+  }
+  .flexEnd {
+    margin-bottom: 3rem;
+  }
+  .cardBodyStyle {
+    padding: 3rem 1rem !important;
+  }
+  .progreesBarProess {
+    padding-left: 1em;
+  }
+}

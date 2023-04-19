@@ -1,3 +1,10 @@
+/**
+ * This is a Next.js page component that renders the InspirationPage container
+ * inside a MainLayout component and includes NextSeo for SEO optimization.
+ * @returns The `Inspiration` component is being returned, which includes the
+ * `NextSeo` component for SEO optimization and the `MainLayout` component that
+ * wraps the `InspirationPage` component.
+ */
 import Head from '../../layouts/head/Head'
 import MainLayout from '../../layouts/mainLayout/MainLayout'
 import InspirationPage from '../../containers/inspirationPage/InspirationPage'

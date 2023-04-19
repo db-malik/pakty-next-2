@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
+import LoginPage from '../../containers/connexionsPakty/LoginPage'
 
 const Magazine = () => {
   return (
@@ -12,7 +13,7 @@ const Magazine = () => {
         image=""
       />
 
-      {/* <LoginPage /> */}
+      <LoginPage />
     </>
   )
 }

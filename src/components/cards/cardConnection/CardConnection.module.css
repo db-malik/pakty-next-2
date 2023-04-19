@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.leftContainer {
+  padding: 100px 0 0 8%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoContainer {
+  top: 0;
+  left: 8%;
+  position: absolute;
+  width: 108.73px !important;
+  height: 28.81px !important;
+  margin: 20px 0;
+  flex: 1;
+}
+.rightContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0px 50px 50px 0px;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

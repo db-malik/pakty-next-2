@@ -28,13 +28,6 @@ const ProductsPagination = ({ allItems, pageSize }) => {
           <PrimaryBtn onClick={(e) => nextPage(e)}>{index + 1}</PrimaryBtn>
         </div>
       ))}
-      {/* <ProductsPage items={productsPage} className={classes.btnContainer} />
-      {currentPage > 1 && (
-        <PrimaryBtn onClick={(e) => prevPage(e)}>{i}</PrimaryBtn>
-      )}
-      {productsPage.length === pageSize && (
-        <PrimaryBtn onClick={(e) => nextPage(e)}>Next Page</PrimaryBtn>
-      )} */}
     </div>
   )
 }
