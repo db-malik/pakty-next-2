@@ -4,7 +4,7 @@
 }
 .containerColored {
   padding: 50px 4%;
-  background-color: #f1f9ff;
+  background: linear-gradient(180deg, #ffffff 0%, #eaf9fa 100%);
 }
 .paginationContainer {
   display: flex;

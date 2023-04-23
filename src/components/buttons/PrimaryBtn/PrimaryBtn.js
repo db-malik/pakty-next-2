@@ -3,12 +3,12 @@ import FeatherIcon from 'feather-icons-react/build/FeatherIcon'
 import Link from 'next/link'
 import classes from './PrimaryBtn.module.css'
 
-const PrimaryBtn = ({ children, showArrow, linkTo }) => {
+const PrimaryBtn = ({ style, children, showArrow, linkTo }) => {
   return (
     <div>
       <Link href={linkTo ? linkTo : '#'}>
-        <Button className="pakty-btn-primary" size="large" block>
-          {children}{' '}
+        <Button className={`${classes['pakty-btn-primary']} ${style}`}>
+          {children}
           {showArrow ? (
             <FeatherIcon
               className={classes['has-link']}

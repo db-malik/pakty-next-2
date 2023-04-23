@@ -10,9 +10,15 @@
 import { Button } from 'antd'
 import React from 'react'
 import classes from './BtnNumberPage.module.css'
-const BtnNumberPage = ({ children, onClick }) => {
+const BtnNumberPage = ({ children, onClick, isActive }) => {
   return (
-    <Button onClick={onClick} className={classes.container}>
+    <Button
+      style={{
+        backgroundColor: isActive ? '#11F4BD' : '#fff',
+      }}
+      onClick={onClick}
+      className={classes.container}
+    >
       <span>{children}</span>
     </Button>
   )

@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
-import Filter from '../../components/filter/Filter'
-import Collection from '../../components/fragments/landingFragments/collection/Collection'
-import Slider from '../../components/fragments/comonFragment/slider/Slider'
+import BtnNumberPage from '../../../components/buttons/btnNumberPage/BtnNumberPage'
+import Filter from '../../../components/filter/Filter'
+import Slider from '../../../components/fragments/comonFragment/slider/Slider'
+import Collection from '../../../components/fragments/landingFragments/collection/Collection'
+import { paginate } from '../../../utils/paginate/paginate'
+import classes from './UserCollectionPage.module.css'
 
-import classes from './InspirationPage.module.css'
-
+// filter button labels and actions
 import { ButtonsInspirationFilter } from '/data/filterData'
-
-import { paginate } from '../../utils/paginate/paginate'
-import BtnNumberPage from '../../components/buttons/btnNumberPage/BtnNumberPage'
 
 //mock data
 import { collectionData } from '/data/collectionData'
+import RangePrice from '../../../components/filter/rangePrice/RangePrice'
 
-const InspirationPage = () => {
+const UserCollectionPage = ({ user }) => {
   const [pageNumber, setPageNumber] = useState(1)
   const onePageProducts = paginate(collectionData, pageNumber, 18)
 
@@ -22,19 +22,21 @@ const InspirationPage = () => {
   const goToPage = (index) => {
     setPageNumber(index)
   }
+
   return (
-    <div>
+    <>
       <Slider
-        type="inspiration"
-        title="Decor ideas for your space"
-        image="/assets/img/slider-2.jpg"
-        content="If you're searching for the newest trends or modest ideas for 3D Furniture: we've got you the best."
+        title="Select your favourite design Now !"
+        content="Choose your favourite room and send it to us.
+        Send us photos and your home will be transformed. "
+        image="/assets/img/collection-banner.jpg"
       />
       <div className="containerColored">
         <Filter
           title="Choose the type of the room :"
           buttons={ButtonsInspirationFilter}
         />
+        <RangePrice title="Your Budget" width="500px" />
         <Collection
           onePageProducts={onePageProducts}
           title=""
@@ -53,8 +55,8 @@ const InspirationPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
-export default InspirationPage
+export default UserCollectionPage

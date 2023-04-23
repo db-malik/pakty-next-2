@@ -1,45 +1,43 @@
 .container {
-  width: 100%;
   position: relative;
-  border-radius: 0px 0px 50px 50px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
 }
 .imageContainer {
   position: relative;
   width: 100%;
 }
-.contentContainer {
+.description {
   position: absolute;
-  top: 170px;
-  left: 50px;
-  display: flex;
-  flex-direction: column;
-
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  /* height: 230px; */
-  color: #ffffff;
 }
+
 .title {
-  flex: 1;
-  width: 70%;
-  /* height: 40px; */
+  position: absolute;
+  width: 479px;
+  height: 40px;
+  left: 136px;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: calc(2vw + 2vh + 3vmin);
-
-  /* line-height: 100%; */
+  font-size: 40px;
+  line-height: 100%;
   /* identical to box height, or 40px */
 }
 .content {
-  flex: 1;
-
-  width: 70%;
+  position: absolute;
+  width: 379px;
   height: 62px;
+  left: 135px;
+  top: 319px;
+
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: calc(1vw + 3vmin);
-
+  font-size: 24px;
   line-height: 130%;
+  /* or 31px */
+
   opacity: 0.8;
 }
 .btnContainer {

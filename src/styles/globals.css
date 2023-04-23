@@ -1,11 +1,15 @@
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
   /* transition: all 0.5s ease; */
 }
 
 body {
   margin: 0;
-  font-family: Montserrat;
+  max-width: 1440px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -17,14 +21,13 @@ code {
   font-family: 'Montserrat';
 }
 
-.pakty-btn-primary {
+/* .pakty-btn-primary {
   text-transform: uppercase !important;
-  background-color: #11f4bd;
-  border-color: #11f4bd;
+  background: #11f4bd;
+  border-radius: 8px;
   color: #0a3556;
   font-weight: 600;
-  height: 48px;
-}
+} */
 
 .pakty-btn-outlined {
   text-transform: uppercase !important;
@@ -230,11 +233,9 @@ a {
 }
 
 .containerWhite {
-  padding: 50px 4%;
   background-color: #fff;
 }
 .containerColored {
-  padding: 50px 4%;
   background-color: #f1f9ff;
 }
 /* ********************************** */

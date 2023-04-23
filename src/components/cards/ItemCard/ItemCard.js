@@ -21,7 +21,6 @@ import Link from 'next/link'
 const ItemCard = ({
   src,
   title,
-  description,
   price,
   Promoted,
   isLikeable,
@@ -29,34 +28,27 @@ const ItemCard = ({
   linkTo,
 }) => {
   return (
-    <Link href={linkTo ? linkTo : '#'} className={classes.cardContainer}>
-      <div className={classes.upperContent}>
+    <Link href={linkTo ? linkTo : '#'}>
+      <div className={classes.cardContainer}>
         <div className={classes.PromotionStatusContainer}>
-          {Promoted && <PromotionStatus />}
+          {Promoted && <PromotionStatus promotion={Promoted} />}
         </div>
         <div className={classes.likeButtonContainer}>
           {isLikeable && <LikeButton />}
         </div>
-      </div>
-      <div className={classes.imageContainer}>
-        <Image
-          src={src}
-          fill
-          sizes="(max-width: 768px) 100vw,
+        <div className={classes.imageContainer}>
+          <Image
+            src={src}
+            fill
+            sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-          alt="image"
-          priority
-        />
-      </div>
-      <div className={classes.BottumContent}>
-        <div className={classes.content}>
-          <div className={classes.title}> {title} </div>
-          {description && (
-            <div className={classes.description}> {description} </div>
-          )}
-          <div className={classes.price}> ${price} </div>
+            alt="image"
+            priority
+          />
         </div>
+        <div className={classes.title}> {title} </div>
+        <div className={classes.price}> ${price} </div>
         <div className={classes.shopBtnContiner}>
           {showShop && <ShopButton />}
         </div>

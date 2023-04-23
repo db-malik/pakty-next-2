@@ -1,16 +1,27 @@
+import Image from 'next/image'
 import React from 'react'
-import Slider from '../../comonFragment/slider/Slider'
+import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import classes from './SliderLanding.module.css'
-const SliderLanding = () => {
+const Slider = ({ image, title, content, linkTo, buttonLabel }) => {
   return (
-    <Slider
-      type="home"
-      title="Pakty your space in 3D"
-      image="/assets/img/slider-1.jpg"
-      content="Visualize 3D furnitures in your project before shopping"
-      buttonLabel="Design my space"
-      linkTo="#"
-    />
+    <div className={classes.container}>
+      <Image src={image} fill alt="image" />
+      <h1 className={classes.title}>{title}</h1>
+      <div className={classes.content}>{content}</div>
+
+      <div className={classes.btnContainer}>
+        {linkTo ? (
+          <PrimaryBtn
+            style={`${classes.style}`}
+            showArrow={false}
+            linkTo={linkTo}
+          >
+            {buttonLabel}
+          </PrimaryBtn>
+        ) : null}
+      </div>
+    </div>
   )
 }
-export default SliderLanding
+
+export default Slider

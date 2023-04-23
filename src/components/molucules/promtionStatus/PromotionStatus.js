@@ -1,7 +1,7 @@
 import classes from './PromotionStatus.module.css'
 
-const PromotionStatus = ({ promoPercentage }) => {
-  return <span className={classes.promoContainer}>{promoPercentage} qqq</span>
+const PromotionStatus = ({ promotion }) => {
+  return <span className={classes.promoContainer}>{`- %${promotion}`}</span>
 }
 
 export default PromotionStatus

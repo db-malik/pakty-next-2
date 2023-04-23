@@ -1,1 +1,49 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  left: 0px;
+  top: 0px;
+  filter: drop-shadow(4px 6px 40px rgba(0, 0, 0, 0.05));
+  border-radius: 0px 0px 50px 50px;
+}
+.title {
+  position: absolute;
+  width: 479px;
+  height: 40px;
+  left: 136px;
+  top: 200px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.content {
+  position: absolute;
+  width: 379px;
+  height: 62px;
+  left: 135px;
+  top: 300px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #ffffff;
 
+  opacity: 0.8;
+}
+.btnContainer {
+  position: absolute;
+  left: 136px;
+  top: 420px;
+}
+.style {
+  width: 240px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 38px;
+}

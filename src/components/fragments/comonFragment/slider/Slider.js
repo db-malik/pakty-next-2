@@ -6,24 +6,28 @@ const Slider = ({ type, image, title, content, linkTo, buttonLabel }) => {
   return (
     <div className={classes.container}>
       <div
-        style={type === 'home' ? { height: '115vh' } : { height: '80vh' }}
+        style={type === 'home' ? { height: '700px' } : { height: '460px' }}
         className={classes.imageContainer}
       >
         <Image src={image} fill alt="image" />
       </div>
       <div
-        style={type === 'home' ? { color: '#fff' } : { color: '#0A3556' }}
-        className={classes.contentContainer}
+        className={classes.description}
+        style={
+          type === 'home'
+            ? { color: '#fff', top: '244px' }
+            : { color: '#0A3556', top: '173px' }
+        }
       >
         <h1 className={classes.title}>{title}</h1>
         <div className={classes.content}>{content}</div>
-        <div className={classes.btnContainer}>
-          {linkTo ? (
-            <PrimaryBtn showArrow={false} linkTo={linkTo}>
-              {buttonLabel}
-            </PrimaryBtn>
-          ) : null}
-        </div>
+      </div>
+      <div className={classes.btnContainer}>
+        {linkTo ? (
+          <PrimaryBtn showArrow={false} linkTo={linkTo}>
+            {buttonLabel}
+          </PrimaryBtn>
+        ) : null}
       </div>
     </div>
   )
