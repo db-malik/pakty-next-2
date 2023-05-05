@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import classes from './CardPaktyApp.module.css'
+import classes from './CardPaktyApp.module.scss'
 
 export const CardPaktyApp = ({
   title,
@@ -10,11 +10,11 @@ export const CardPaktyApp = ({
 }) => {
   return (
     <div style={{ backgroundColor }} className={classes.container}>
-      <div className={classes.content}>
-        <div className="titleFragments">{title}</div>
-        <div className={classes.subtitle}>{subtitle}</div>
+      <div className={classes.contentContainer}>
+        <div className={classes.title}>{title}</div>
+        <div className={classes.description}>{subtitle}</div>
       </div>
-      <div className={classes.imageContainer}>
+      <div className={classes.mediaContainer}>
         <Image src={imageSrc} fill alt="image" />
       </div>
     </div>

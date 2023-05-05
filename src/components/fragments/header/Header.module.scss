@@ -1,0 +1,235 @@
+@import './variables.scss';
+
+/* .container {
+  position: fixed;
+
+  width: 100%;
+  top: 0;
+  transition: all 1s ease;
+  z-index: 999;
+  padding: 0 135px;
+}
+.supper {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.logoContainer {
+  position: absolute;
+  width: 108.73px;
+  height: 28.81px;
+  top: 34px;
+  left: 0;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0;
+  position: relative;
+  width: 563px;
+  height: 48px;
+  left: 310px;
+
+  top: 24px;
+  gap: 42px;
+  list-style: none;
+}
+.active {
+  border-bottom: 2px solid #385974;
+}
+.navItem {
+  position: relative;
+  font-size: 14px;
+}
+.navItem::after {
+  background-color: #d6d6d6;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+.text-white {
+  color: white !important;
+}
+.btnContainer {
+  width: 202px;
+  height: 48px;
+}
+.navItem:hover::after {
+  width: 100%;
+}
+
+.notHomeNavItem {
+  position: relative;
+  font-size: 14px;
+}
+
+.notHomeNavItem::after {
+  background-color: #385974;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+.notHomeNavItem:hover::after {
+  width: 100%;
+}
+.userImageContainer {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.btnDimension {
+  width: 190px;
+  height: 48px;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+.userlogin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  width: 283px;
+  height: 48px;
+  left: 800px;
+  top: 24px;
+  list-style: none;
+  gap: 40px;
+}
+.cart {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 36px;
+}
+.hifen {
+  position: absolute;
+  right: 470px;
+  top: 38px;
+}
+@media only screen and (max-width: 767px) {
+  .navbarContainer {
+    display: none;
+  }
+} */
+
+.headerContainer {
+  max-width: $max-width;
+  position: fixed;
+  height: 96px;
+  width: 100%;
+  top: 0;
+  transition: all 1s ease;
+  z-index: 999;
+  padding: 0 100px;
+
+  .navBarContainer {
+    height: 96px;
+    display: grid;
+    grid-template-columns: 1fr 7fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 'logo navBar userBar';
+    align-items: center;
+    .navItem:hover::after {
+      width: 100%;
+    }
+
+    .notHomeNavItem {
+      position: relative;
+      font-size: 14px;
+    }
+
+    .notHomeNavItem::after {
+      background-color: #385974;
+      content: '';
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      transition: width 0.35s ease 0s;
+      position: absolute;
+    }
+    .notHomeNavItem:hover::after {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    grid-area: logo;
+    position: relative;
+    height: 28.81px;
+    width: 108px;
+  }
+
+  .navBar {
+    grid-area: navBar;
+    padding: 0 20px 0 130px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px 10px;
+    justify-items: end;
+
+    .navItem {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+    @media only screen and (max-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  .userBar {
+    padding: 0;
+    grid-area: userBar;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'hifen login designBtn cart';
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px 10px;
+
+    .hifen {
+      grid-area: hifen;
+    }
+    .login {
+      grid-area: login;
+    }
+    .designBtn {
+      grid-area: designBtn;
+      .btnDimension {
+        width: 190px;
+        height: 48px;
+        padding: 12px 12px;
+        font-size: 14px;
+      }
+    }
+    .cart {
+      grid-area: cart;
+    }
+  }
+}

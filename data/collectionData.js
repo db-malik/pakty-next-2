@@ -27,12 +27,12 @@ export const collectionData = [
   {
     _id: 6,
     title: 'prod6',
-    image: '/assets/img/collections/Image_container-5.jpg',
+    image: '/assets/img/collections/Image_container-3.jpg',
   },
   {
     _id: 7,
     title: 'prod7',
-    image: '/assets/img/collections/Image_container-6.jpg',
+    image: '/assets/img/collections/Image_container-3.jpg',
   },
   {
     _id: 8,
@@ -77,7 +77,7 @@ export const collectionData = [
   {
     _id: 16,
     title: 'prod7',
-    image: '/assets/img/collections/Image_container-6.jpg',
+    image: '/assets/img/collections/Image_container-3.jpg',
   },
   {
     _id: 17,

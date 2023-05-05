@@ -14,7 +14,7 @@ const LikeButton = ({ className }) => {
   return (
     <Button
       className={classes['like-Button']}
-      icon={<FeatherIcon icon="heart" size={16} />}
+      icon={<FeatherIcon icon="heart" size={18} />}
     ></Button>
   )
 }

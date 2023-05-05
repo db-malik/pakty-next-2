@@ -12,21 +12,27 @@ export const ButtonsInspirationFilter = [
     action: '',
   },
   {
-    id: 1,
+    id: 2,
     label: 'Bedroom',
     iconSrc: '/assets/icons/bedroom.png',
     action: '',
   },
   {
-    id: 1,
+    id: 3,
     label: 'Kitchen',
     iconSrc: '/assets/icons/kitchen.png',
     action: '',
   },
   {
-    id: 1,
+    id: 4,
     label: 'Dinning room',
     iconSrc: '/assets/icons/table.png',
+    action: '',
+  },
+  {
+    id: 5,
+    label: '...',
+    iconSrc: '',
     action: '',
   },
 ]

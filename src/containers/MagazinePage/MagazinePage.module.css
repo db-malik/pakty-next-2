@@ -1,3 +1,7 @@
+.container {
+  padding: 50px 100px;
+}
+
 .articles {
   margin: 40px 0;
   display: flex;

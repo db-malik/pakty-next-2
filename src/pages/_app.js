@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import { DefaultSeo } from 'next-seo'
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
@@ -14,7 +14,10 @@ export default function App({ Component, pageProps }) {
           siteName: 'SiteName',
         }}
       />
+
       <Component {...pageProps} />
     </>
   )
 }
+
+export default App

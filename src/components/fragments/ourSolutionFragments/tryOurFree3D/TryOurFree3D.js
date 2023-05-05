@@ -1,25 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
-import CardBigMedia from '../../../cards/cardBigMedia/cardBigMedia'
 
 import classes from './TryOurFree3D.module.css'
+import CardBigMediaRight from '@/components/cards/cardBigMedia/cardBigMediaRight'
 
 const TryOurFree3D = () => {
   return (
     <div className={classes.cardContainer}>
-      <CardBigMedia
-        child={
-          <div className={classes.leftContainer}>
-            <Image src="/assets/img/try-free-image.jpg" fill alt="image" />
-          </div>
-        }
+      <CardBigMediaRight
+        child={<Image src="/assets/img/try-free-image.jpg" fill alt="image" />}
         title="Try, choose, and save your favorite furniture before shopping."
-        description1="3D furniture models with different designs, colors, and textures are readily available. Select what you want.
+        description1="Experience the future of furniture shopping with Pakty's cutting-edge 3D visualization tool. Try it for free and bring your design ideas to life before making a purchase.
         "
-        //description2="ultricies. Leo montes amet enim donec nisl platea. Condimentum elit vulputate et et. Purus enim cras lorem facilisi donec. Ipsum nisl sed mauris nisl convallis facilisi augue orci id. Augue"
         buttonContent="DESIGN MY SPACE"
         linkTo="/become-pro"
-        mediaPosition="right"
       />
     </div>
   )

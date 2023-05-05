@@ -1,73 +1,53 @@
 import Image from 'next/image'
 import React from 'react'
 import { Col, Row } from 'antd'
-import classes from './PostPage.module.css'
+import classes from './PostPage.module.scss'
 
 // mock post data //*css*/`
 import { articlePost } from '/data/articleData.js'
 import YouMyAlsoLike from '../../components/molucules/exploreAllBar/ExploreAllBar'
 import OurBlog from '../../components/fragments/landingFragments/ourBlog/OurBlog'
 import ExploreAllBar from '../../components/molucules/exploreAllBar/ExploreAllBar'
+import CardBigMedia from '@/components/cards/cardBigMedia/cardBigMedia'
+import CardBigMediaRight from '@/components/cards/cardBigMedia/cardBigMediaRight'
 
 const PostPage = ({ postData }) => {
   postData = articlePost
-  const { date, author, title, image, introductions, sections, endPost } =
-    postData
+  const { date, author, title, image, introduction1, introduction2, section, endPost } = postData
 
   return (
-    <div className={classes.containerColored}>
-      <div className={classes.topPostcontainer}>
-        <div className={classes.TopImageContainer}>
-          <Image src={image} fill alt="post image" />
-        </div>
-        <div className={classes.postInformation}>
-          <span className={classes.date}>{date}</span>
-          <h1 className={classes.title}>{title}</h1>
+    <div className={classes.container}>
+      <div className={classes.imageContainer}>
+        <Image src={image} fill alt="post image" />
+      </div>
+
+      <div className={classes.article}>
+        <div className={classes.articleInfo}>
+          <div className={classes.date}>{date}</div>
+          <div className={classes.title}>{title}</div>
           <div className={classes.author}>
             <span className={classes.authorImage}>
-              <Image fill src={author.image} />
+              <Image src={author.image} fill />
             </span>
             <span className={classes.authorName}>{author.name}</span>
           </div>
         </div>
-      </div>
-      <div className={classes.postContent}>
-        {introductions.map((item, index) => (
-          <div className={classes.intro}>
-            <p className={classes.textBody}>{item}</p>
-            <br />
-          </div>
-        ))}
-        <div className={classes.sections}>
-          {sections.map((section, index) => (
-            <Row
-              justify={'space-between'}
-              align={'start'}
-              className={classes.section}
-            >
-              <Col xs={24} xl={11}>
-                <div className={classes.sectionBody}>
-                  <h2 className={classes.sectionTitle}>{section.title}</h2>
-                  <p className={classes.textBody}>{section.content}</p>
-                </div>
-              </Col>
-              <Col xs={24} xl={11}>
-                <div className={classes.sectionImageContainer}>
-                  <Image src={section.image} fill />
-                </div>
-              </Col>
-            </Row>
-          ))}
-        </div>
-        <div className={classes.endPost}>
-          <p className={classes.textbody}> {endPost}</p>
+        <div className={classes.articleContent}>
+          <div>{introduction1}</div>
+          <br />
+          <div>{introduction2}</div>
         </div>
       </div>
-      <div className={classes.exploreAll}>
+      <div className={classes.section}>
+        <div className={classes.left}></div>
+        <div className={classes.right}></div>
+      </div>
+      <div className={classes.youmyAlsoLike}>
         <ExploreAllBar label="Also you may like" linkTo={'/magazine'} />
       </div>
-
-      <OurBlog />
+      <div className={classes.other}>
+        <OurBlog />
+      </div>
     </div>
   )
 }

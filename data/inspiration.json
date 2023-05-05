@@ -1,0 +1,1200 @@
+{
+  "message": "findAll",
+  "data": {
+    "_id": "64454e14613sdvc5545d9f2dfda30",
+    "image": "https://picsum.photos/400",
+    "products": [
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d744dsvsd52708eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408e745b28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-1.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb28784603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408eb1fg728603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-2.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408ese4b28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d740ase18eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-3.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63fskr89b8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d740sesdv8eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-4.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408evesb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d74s08ebss28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-5.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb28603fsdf64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63fsd89b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-6.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d74gh08eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408xwdveb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-7.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d74fgb08eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408edfbb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-8.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "images": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63fdfb89b8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408ebdb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-9.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9sdvd7408eb286fb03f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408ebdfb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-10.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89bsdvbs8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89sdvb8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-11.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb286sdb03f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63fsdv89b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-12.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb28sdb603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408eb286jkyu03f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-13.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408dfdeb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63sdvf89b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-14.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb28603f6sdv4",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89bsdv8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-1.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408eb28sdvs603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89sdfbb8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-2.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d740sdb8eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8sdbe9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-3.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63dsnf89b8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9snd7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-4.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d740ssnyy8eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408ekrntb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-5.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7fgdn408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9fsnd7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-6.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408gbrteb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7sqdt408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-7.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d740sgg8eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408esghsb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-8.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "images": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8esnt9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63stntf89b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-9.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7sfns408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408eb286srtn03f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-10.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8esrtn9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89brtsn8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-11.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408srtteb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9rtnrd7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-12.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89brtnrt8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d74srt08eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-13.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9snrtd7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408eb2yzkepf8603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-14.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89fgnb8e9d7408eb28tt603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89bsv8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-1.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d74fdb08eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d74d08eb286f03f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-2.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f8fdb9b8e9d7408eb28bf603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9fdbd7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-3.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63fdfbd89b8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d74dfb08eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-4.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89dfbb8e9d7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89brt8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-5.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9dmeoe7408eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f8fdb9b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-11.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d74df08eb28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d7408eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-12.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      },
+      {
+        "canvas": {
+          "x": 0,
+          "y": 0
+        },
+        "product": {
+          "_id": "63f89b8e9d7408ebsve28603f64",
+          "entitled": "A mid-Century Modern",
+          "description": "Lorem ipsum dolor sit amet consectetur. Ullamcorper sed turpis sapien id mi id venenatis in id. Pretium massa amet sapien turpis quam turpis. Sit sed malesuada velit adipiscing urna pretium magna. Sit quis at diam et sed at eu. Sed non ut elit amet proin. Ullamcorper purus viverra odio a luctus. Lectus fringilla sed scelerisque in et dolor dictumst molestie. Quam nunc dolor pellentesque viverra nulla quam proin. Dignissim.",
+          "price": 1,
+          "materials": ["50"],
+          "measurements": {
+            "height": 10,
+            "width": 20,
+            "depth": 40,
+            "weight": 30,
+            "_id": "63f89b8e9d740dsv717828eb28603f65"
+          },
+          "images": ["/assets/img/inspiration/image-inspiration-13.png"],
+          "colors": ["#FFF"],
+          "textures": ["60"],
+          "bundle3d": "bundleid",
+          "category": "63bc68b12c7d2ce19d34fc8f",
+          "maxProdPerWeek": 1,
+          "owner": "63bbee3d2c7d2ce19d34fc34",
+          "addedBy": "63bbed532c7d2ce19d34fc28",
+          "status": "Available",
+          "createdAt": "2023-02-24T11:12:14.500Z",
+          "__v": 0
+        },
+        "image": "/public/assets/img/inspiration/image-inspiration-1.png",
+        "order": 1
+      }
+    ],
+    "createdAt": "2023-04-23T15:26:12.339Z",
+    "updatedAt": "2023-04-23T15:26:12.339Z",
+    "__v": 0
+  }
+}

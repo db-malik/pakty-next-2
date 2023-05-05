@@ -1,7 +1,7 @@
 .container {
   width: 40px;
   height: 40px;
-
+  margin-right: 8px;
   border: 1px solid #ffffff;
   border-radius: 4px;
   font-weight: 600;

@@ -7,13 +7,14 @@ import classes from './ProductDetailPage.module.css'
 
 import { allProductData } from '/data/ProductsData'
 import { productDetail } from '/data/oneProductDetail'
+import OtherProducts from '../../components/fragments/productDetailFragments/otherProducts/OtherProducts'
 
-function ProductDetailPage({ productId }) {
+function ProductDetailPage({ product }) {
+  console.log(product)
   return (
-    <div className={classes.container}>
-      <ProductDetail product={productDetail} />
-
-      {/* <OtherProduct /> */}
+    <div className={`${classes.container} lineairBackground`}>
+      <ProductDetail product={product} />
+      <OtherProducts products={allProductData.slice(0, 4)} />
     </div>
   )
 }

@@ -2,20 +2,21 @@ import React from 'react'
 import { Button, Col, Form, Input, Radio, Row } from 'antd'
 
 import Slider from '../../components/fragments/comonFragment/slider/Slider'
-import classes from './BecomeProPage.module.css'
+import classes from './BecomeProPage.module.scss'
 const { TextArea } = Input
 
 const BecomeProPage = () => {
   return (
     <>
       <Slider
+        widthContent="700px"
         type="becomePro"
         image="/assets/img/become_pro.png"
         title="Become a professional"
         content="If you have a project or products and you want to be professional , we can help you.
     Just send us your request ! "
       />
-      <div className="containerColored">
+      <div className={`${classes.container}   lineairBackground`}>
         <p className={classes.desc}>
           Pakty team can help you , Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Vitae risus, lorem amet aliquam libero mauris magna

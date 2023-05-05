@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 578px;
+  gap: 60px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'contentContainer'
+    'mediaContainer';
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'title title title'
+    'description description description';
+  justify-items: center;
+  align-content: center;
+  grid-area: contentContainer;
+  padding: 80px 100px;
+}
+
+.title {
+  grid-area: title;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: #0a3556;
+}
+
+.description {
+  grid-area: description;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #112b3c;
+  opacity: 0.8;
+}
+
+.mediaContainer {
+  position: relative;
+  grid-area: mediaContainer;
+  border: 1px solid #e6e6e6;
+  box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+// .container {
+//   position: relative;
+//   width: 1446px;
+//   height: 946px;
+
+//   border-radius: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   flex-direction: column;
+//   text-align: center;
+// }
+// .content {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 13px;
+//   position: absolute;
+//   width: 799px;
+//   height: 52px;
+//   top: 89.06px;
+// }
+
+// .subtitle {
+//   width: 863px;
+//   height: 52px;
+
+//   margin: auto;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 20px;
+//   line-height: 130%;
+
+//   color: #112b3c;
+
+//   opacity: 0.8;
+// }
+// .imageContainer {
+//   position: absolute;
+//   width: 1169px;
+//   height: 578px;
+//   left: 135px;
+//   top: 266.06px;
+//   border: 1px solid #e6e6e6;
+//   /* Drop Shadow */
+//   overflow: hidden;
+//   box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
+//   border-radius: 24px;
+// }
+// .imageContainer:hover {
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+//   z-index: 99;
+// }

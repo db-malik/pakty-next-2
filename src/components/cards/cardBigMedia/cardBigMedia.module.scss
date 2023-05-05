@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px;
+  grid-auto-flow: row;
+  grid-template-areas: 'mediaContainer contentContainer';
+  height: 460px;
+
+  .mediaContainer {
+    position: relative;
+    grid-area: mediaContainer;
+  }
+
+  .contentContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'title'
+      'description'
+      'button';
+    grid-area: contentContainer;
+    justify-items: start;
+    padding-right: 10px;
+  }
+
+  .title {
+    grid-area: title;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #0a3556;
+  }
+
+  .description {
+    grid-area: description;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #112b3c;
+    opacity: 0.8;
+    text-align: start;
+  }
+
+  .button {
+    grid-area: button;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .btnStyle {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      background: #11f4bd;
+      box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      width: 220px;
+      height: 56.02px;
+      padding: 18px 18px;
+    }
+  }
+  @media only screen and (max-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'mediaContent'
+      'contentContainer';
+
+    .mediaContent {
+      position: relative;
+      grid-area: mediaContent;
+      height: 428px;
+      width: 500px;
+    }
+
+    .contentContainer {
+      grid-area: contentContainer;
+    }
+  }
+}

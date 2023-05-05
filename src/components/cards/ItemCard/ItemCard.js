@@ -27,6 +27,7 @@ const ItemCard = ({
   showShop,
   linkTo,
 }) => {
+  
   return (
     <Link href={linkTo ? linkTo : '#'}>
       <div className={classes.cardContainer}>
@@ -37,18 +38,18 @@ const ItemCard = ({
           {isLikeable && <LikeButton />}
         </div>
         <div className={classes.imageContainer}>
-          <Image
-            src={src}
-            fill
-            sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+   
+          <img
+            src= {src}
+            width={100}
+            height={100}
+      
             alt="image"
-            priority
+            
           />
         </div>
-        <div className={classes.title}> {title} </div>
-        <div className={classes.price}> ${price} </div>
+       {title && <div className={classes.title}> {title} </div>}
+        { price &&  <div className={classes.price}> {price} DT </div>}
         <div className={classes.shopBtnContiner}>
           {showShop && <ShopButton />}
         </div>

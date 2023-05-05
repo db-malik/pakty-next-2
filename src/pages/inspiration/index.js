@@ -5,12 +5,17 @@
  * `NextSeo` component for SEO optimization and the `MainLayout` component that
  * wraps the `InspirationPage` component.
  */
-import Head from '../../layouts/head/Head'
+
+/*   tow line bellow is required to ftch data 
+from json file remove itf data fetched from API    */
+import fs from 'fs'
+import path from 'path'
+
 import MainLayout from '../../layouts/mainLayout/MainLayout'
 import InspirationPage from '../../containers/inspirationPage/InspirationPage'
 import { NextSeo } from 'next-seo'
 
-const Inspiration = () => {
+const Inspiration = ({ inspirationData }) => {
   return (
     <>
       <NextSeo
@@ -21,10 +26,31 @@ const Inspiration = () => {
         image=""
       />
       <MainLayout>
-        <InspirationPage />
+        <InspirationPage inspirationData={inspirationData} />
       </MainLayout>
     </>
   )
 }
 
 export default Inspiration
+
+export async function getServerSideProps(context) {
+  /* this is for fetch data from file inspiration.json 
+  its justto moch data commented and uncomment
+   bloc bellow to fetch data fron API 
+  */
+  const filePath = path.join(process.cwd(), 'data', 'inspiration.json')
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const inspirationData = JSON.parse(fileContents)
+
+  /* uncomment this to fetch data from API */
+  // const res = await fetch('http://pm.basketofart.net:3000/inspiration')
+  // const inspirationData = await res.json()
+  // const inspirations = inspirationData.data
+
+  return {
+    props: {
+      inspirationData: inspirationData.data.products,
+    },
+  }
+}

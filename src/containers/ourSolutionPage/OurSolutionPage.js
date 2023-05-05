@@ -18,6 +18,7 @@ const OurSolutionPage = () => {
   return (
     <>
       <Slider
+        widthContent="600px"
         type={'solution'}
         image="/assets/img/app-slider.jpg"
         title="Pakty app is your ultimate solution for creating and managing your room decoration."
@@ -25,14 +26,19 @@ const OurSolutionPage = () => {
         linkTo=""
         buttonLabel=""
       />
-      <div className="containerColored">
-        <div className={classes.containerFragment}>
-          <DownloadPaktyApp />
-          <PracticalApp />
+      <div className={`${classes.container} lineairBackground`}>
+        <DownloadPaktyApp />
+        <PracticalApp />
+        <div className={classes.explore3dContainer}>
           <Explore3D />
+        </div>
+        <div className={classes.tryOurFreeContainer}>
           <TryOurFree3D />
-
+        </div>
+        <div className={classes.planContainer}>
           <Plans />
+        </div>
+        <div className={classes.contactUsContainer}>
           <CardContactUs />
         </div>
       </div>

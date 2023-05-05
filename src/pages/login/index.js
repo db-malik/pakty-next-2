@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
-import LoginPage from '../../containers/connexionsPakty/LoginPage'
+import LoginPage from '../../containers/connexionsPakty/login/LoginPage'
 
-const Magazine = () => {
+const index = () => {
   return (
     <>
       <NextSeo
@@ -18,4 +18,4 @@ const Magazine = () => {
   )
 }
 
-export default Magazine
+export default index

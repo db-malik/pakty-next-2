@@ -5,20 +5,17 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import classes from './CardGalery.module.css'
+import classes from './CardGalery.module.scss'
 
 import CardItemCollection from '../cardItemCollection/CardItemCollection'
 
 const CardGalery = ({ sixProducts }) => {
+  console.log(sixProducts)
   return (
     <div className={classes.container}>
-      {sixProducts.map((product, index) => (
-        <div className={`${classes[`div${index + 1}`]} ${classes.images}`}>
-          <CardItemCollection
-            linkTo={`inspiration/detail/${product._id}`}
-            imageSrc={product.image}
-            islikeable={false}
-          />
+      {sixProducts.map((item, index) => (
+        <div className={`${classes[`div${index + 1}`]}`}>
+          <CardItemCollection linkTo={`inspiration/detail/${item.product._id}`} imageSrc={item.product.images[0]} islikeable={false} />
         </div>
       ))}
     </div>

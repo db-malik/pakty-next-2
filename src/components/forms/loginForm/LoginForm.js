@@ -4,37 +4,21 @@ import { Input } from 'antd'
 import { AiFillEyeInvisible } from 'react-icons/ai'
 import { FcGoogle } from 'react-icons/fc'
 
-import classes from './LoginForm.module.css'
+import classes from './LoginForm.module.scss'
 import PrimaryBtn from '../../buttons/PrimaryBtn/PrimaryBtn'
 
 const LoginForm = () => {
   return (
     <div className={classes.container}>
-      <div className={classes.top}>
-        <h1 className={classes.title}>Wecome back</h1>
-        <div className={classes.description}>
-          Welcome back! Please enter your details.
-        </div>
+      <div class={classes.email}>
+        <input className={classes.inputField} placeholder="Email address" type="text" name="email" value="" />
       </div>
-      <form className={classes.form}>
-        <input
-          className={classes.inputField}
-          placeholder="Email address"
-          type="text"
-          name="email"
-          value=""
-        />
-        <div className={classes.passwordContainer}>
-          <input
-            className={classes.inputField}
-            placeholder="Password"
-            type="password"
-            name=""
-            value=""
-          />
+      <div class={classes.password}>
+        <input className={classes.inputField} placeholder="Password" type="password" name="" value="" />
 
-          <AiFillEyeInvisible className={classes.iconShow} />
-        </div>
+        <AiFillEyeInvisible className={classes.iconShow} />
+      </div>
+      <div class={classes.forgotPassword}>
         <div className={classes.checkboxContainer}>
           <div className={classes.checkbox}>
             <input id="rememberMe" type="checkbox" />
@@ -44,20 +28,22 @@ const LoginForm = () => {
             Forgot Password
           </Link>
         </div>
+      </div>
+      <div class={classes.submit}>
         <PrimaryBtn>LOG IN</PrimaryBtn>
-        <div className={classes.bottum}>
-          <div className={classes.actionContainer}>
-            <span> Don’t have an account?</span>
-            <Link href="/sign-up" className={classes.links}>
-              Sign up for free
-            </Link>
-          </div>
-          <div>Or</div>
-          <div className={classes.loginGoogle}>
-            <FcGoogle /> <span>Log in with Google</span>
-          </div>
+      </div>
+      <div class={classes.link}>
+        <div className={classes.actionContainer}>
+          <span> Don’t have an account?</span>
+          <Link href="/sign-up" className={classes.links}>
+            Sign up for free
+          </Link>
         </div>
-      </form>
+      </div>
+      <div class={classes.or_br}>Or</div>
+      <div class={classes.google}>
+        <FcGoogle /> <span>Log in with Google</span>
+      </div>
     </div>
   )
 }

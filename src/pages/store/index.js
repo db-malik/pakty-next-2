@@ -3,8 +3,10 @@ import Head from 'next/head'
 import React from 'react'
 import OurStore from '../../containers/ourStorePage/OurStore'
 import MainLayout from '../../layouts/mainLayout/MainLayout'
+import Image from "next/image"
 
-const Store = () => {
+const Store = ({products}) => {
+console.log(products);
   return (
     <>
       <NextSeo
@@ -15,10 +17,23 @@ const Store = () => {
         image=""
       />
       <MainLayout>
-        <OurStore />
+        <OurStore products={products} />
       </MainLayout>
     </>
   )
 }
 
 export default Store
+
+
+
+export async function getServerSideProps(context) {
+  const res = await fetch('http://pm.basketofart.net:3000/getProducts');
+  const data = await res.json();
+  const  products = data.data
+  return {
+    props: {
+      products: products
+    }
+  };
+}

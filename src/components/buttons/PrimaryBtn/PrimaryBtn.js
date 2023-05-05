@@ -15,7 +15,7 @@ const PrimaryBtn = ({ style, children, showArrow, linkTo }) => {
               size={20}
               icon="arrow-right"
             />
-          ) : null}{' '}
+          ) : null}
         </Button>
       </Link>
     </div>

@@ -10,6 +10,7 @@ const MagazinePage = () => {
   return (
     <>
       <Slider
+        widthContent="690px"
         type={'magazine'}
         image="/assets/img/magazine.png"
         title="Discover pakty’s magazine"
@@ -17,7 +18,7 @@ const MagazinePage = () => {
         linkTo=""
         buttonLabel=""
       />
-      <div className="containerColored">
+      <div className={`${classes.container} lineairBackground `}>
         <Filter
           title="Categories"
           buttons={[

@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
-import classes from './SliderLanding.module.css'
+import classes from './SliderLanding.module.scss'
 const Slider = ({ image, title, content, linkTo, buttonLabel }) => {
   return (
     <div className={classes.container}>
-      <Image src={image} fill alt="image" />
+      <div className={classes.imageContainer}>
+        <Image src={image} fill alt="image" />
+      </div>
       <h1 className={classes.title}>{title}</h1>
       <div className={classes.content}>{content}</div>
 

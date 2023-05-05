@@ -1,0 +1,5 @@
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  border: 1 px solid red;
+}

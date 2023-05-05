@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 961px;
+  gap: 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 'leftContainer rightContainer';
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+
+  .leftContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'logo'
+      'title'
+      'form';
+    grid-area: leftContainer;
+    text-align: left;
+    padding-left: 135px;
+
+    .logo {
+      position: relative;
+      grid-area: logo;
+      position: absolute;
+      width: 112.34px;
+      height: 28.81px;
+      left: 135px;
+      top: 34px;
+    }
+
+    .title {
+      grid-area: title;
+      display: flex;
+      flex-direction: column;
+
+      .titleSup {
+        grid-area: titleSup;
+        font-weight: 700;
+        font-size: 40px;
+        color: #0a3556;
+        padding: 0;
+        margin: 0;
+      }
+
+      .titleDesc {
+        grid-area: titleDesc;
+        font-weight: 500;
+        font-size: 20px;
+        color: #0a3556;
+        opacity: 0.8;
+      }
+    }
+    .form {
+      grid-area: form;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .rightContainer {
+    grid-area: rightContainer;
+    position: relative;
+  }
+}
+
+.inputField {
+  padding: 20px 12px;
+  gap: 16px;
+  width: 430px;
+  height: 54px;
+  font-size: 14px;
+  color: #8095a6;
+  opacity: 0.8;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+.submit {
+  width: 430px;
+  height: 60px;
+  background-color: #11f4bd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnStyle {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0a3556;
+  width: 240px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px 58px;
+}

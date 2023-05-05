@@ -2,7 +2,7 @@ import { Button, Col, Layout, Menu, Row } from 'antd'
 import FeatherIcon from 'feather-icons-react'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import classes from './Header.module.css'
+import classes from './Header.module.scss'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import paktylogo from '../../../assets/img/logo.png'
@@ -14,16 +14,13 @@ const navItem = [
   { label: 'Our Store', link: '/store' },
   { label: 'Magazine', link: '/magazine' },
   { label: 'Solution', link: '/our-solution' },
-  { label: 'Become Pro', link: '/become-pro' },
+  // { label: 'Become Pro', link: '/become-pro' },
 ]
 
 const Header = () => {
   const { Header } = Layout
   const [navbar, setNavbar] = useState(false)
-  //const location = useLocation();
   const router = useRouter()
-  //const navigate = useNavigate();
-  // useRouter is alternative for usenavigate in nextjs
   const navStyle =
     router.pathname === '/'
       ? {
@@ -36,7 +33,6 @@ const Header = () => {
         }
   const navigateTo = (url) => {
     router.push(url)
-    //navigate(url);
   }
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -53,7 +49,7 @@ const Header = () => {
   })
   return (
     <div
-      className={`${classes.container}  ${navbar ? 'normal' : 'header-custom'}`}
+      className={`${classes.headerContainer}  ${navbar ? 'normal' : 'header-custom'}`}
       style={
         navbar
           ? {
@@ -63,55 +59,47 @@ const Header = () => {
           : navStyle
       }
     >
-      <div className={classes.logoContainer}>
-        <Link href="/">
-          <Logo />
-        </Link>
-      </div>
-      <ul className={classes.navbarContainer}>
-        {navItem.map((item, index) => (
-          <Link
-            key={index}
-            href={item.link}
-            className={
-              router.pathname === item.link ? classes.active : classes.desactive
-            }
-          >
-            <li
-              className={
-                router.pathname === '/'
-                  ? classes.navItem
-                  : classes.nothomeNavItem
-              }
-            >
-              {item.label}
-            </li>
+      <div className={classes.navBarContainer}>
+        <div className={classes.logo}>
+          <Link href="/">
+            <Logo />
           </Link>
-        ))}
+        </div>
+        <ul className={classes.navBar}>
+          {navItem.map((item, index) => (
+            <Link key={index} href={item.link} className={router.pathname === item.link ? classes.active : classes.desactive}>
+              <li className={router.pathname === '/' ? classes.navItem : classes.notHomeNavItem}>{item.label}</li>
+            </Link>
+          ))}
+        </ul>
 
-        <li>|</li>
-
-        <Link href="/login">
-          {' '}
-          <li className={`${classes.loginLink}, ${classes.navItem}`}>login</li>
-        </Link>
-        <li className={classes.btnContainer}>
-          <PrimaryBtn style={classes.btnDimension} showArrow={false} linkTo="">
-            DESIGN MY PROJECT
-          </PrimaryBtn>
-        </li>
-        <Link href="/cart">
-          <li className={classes.cart}>
-            <FeatherIcon
-              style={{
-                height: 31,
-              }}
-              className={router.pathname === '/cart' ? 'active' : 'desactive'}
-              icon={'shopping-cart'}
-            ></FeatherIcon>
+        <ul className={classes.userBar}>
+          <span className={classes.hifen}>|</span>
+          <li className={classes.login}>
+            <Link className={`${classes.loginLink}, ${classes.navItem}`} href="/login">
+              login
+            </Link>
           </li>
-        </Link>
-      </ul>
+          <li className={classes.designBtn}>
+            <PrimaryBtn style={`${classes.btnDimension}`} showArrow={false} linkTo="/design-project">
+              DESIGN MY PROJECT
+            </PrimaryBtn>
+          </li>
+          <li className={classes.cart}>
+            <div className={classes.cart}>
+              <Link href="/cart">
+                <FeatherIcon
+                  style={{
+                    height: 31,
+                  }}
+                  className={router.pathname === '/cart' ? 'active' : 'desactive'}
+                  icon={'shopping-cart'}
+                ></FeatherIcon>
+              </Link>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }

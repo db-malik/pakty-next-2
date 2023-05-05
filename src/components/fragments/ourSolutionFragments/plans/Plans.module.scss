@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 612px;
+  gap: 00px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'top'
+    'bottum';
+  align-items: center;
+  .top {
+    grid-area: top;
+    .title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 130%;
+      text-align: center;
+      color: #0a3556;
+    }
+    .desc {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 160%;
+      text-align: center;
+      color: #112b3c;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .bottum {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: 'plan1 plan2 plan3';
+    grid-area: bottum;
+  }
+
+  .plan1 {
+    grid-area: plan1;
+  }
+
+  .plan2 {
+    grid-area: plan2;
+  }
+
+  .plan3 {
+    grid-area: plan3;
+  }
+}

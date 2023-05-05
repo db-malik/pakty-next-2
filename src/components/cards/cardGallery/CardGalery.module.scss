@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+.container {
+  & > * {
+    position: relative;
+    border-radius: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  padding-top: 20px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1240px;
+  height: 807px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    'div1 div2 div3'
+    'div4 div2 div6'
+    'div4 div5 div6';
+
+  .div1 {
+    grid-area: div1;
+  }
+  .div2 {
+    grid-area: div2;
+  }
+  .div3 {
+    grid-area: div3;
+  }
+  .div4 {
+    grid-area: div4;
+  }
+  .div5 {
+    grid-area: div5;
+  }
+  .div6 {
+    grid-area: div6;
+  }
+  @media only screen and (max-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr;
+    gap: 20px 20px;
+    margin: 0 100px;
+    padding: 0 auto;
+    grid-template-areas:
+      'div1 div2'
+      'div4 div5'
+      'div3 div6';
+    .div1 {
+      grid-area: div1;
+    }
+    .div2 {
+      grid-area: div2;
+    }
+    .div3 {
+      grid-area: div3;
+    }
+  }
+}

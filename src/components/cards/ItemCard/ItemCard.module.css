@@ -24,8 +24,9 @@
 }
 
 .price {
+  text-align: left;
   position: absolute;
-  width: 45px;
+ 
   height: 18px;
   left: 14.25px;
   top: 318.79px;
@@ -37,8 +38,8 @@
 }
 
 .title {
+  text-align: left;
   position: absolute;
-  width: 141px;
   height: 18px;
   left: 14.25px;
   top: 293.16px;

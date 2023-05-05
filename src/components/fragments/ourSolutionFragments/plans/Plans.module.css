@@ -1,8 +1,0 @@
-.plansContainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 60px 10px;
-  padding: 50px 0;
-  flex-wrap: wrap;
-}

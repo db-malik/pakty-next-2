@@ -1,0 +1,61 @@
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 30px;
+  gap: 30.02px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 4px 6px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}
+
+.likeButtonContainer {
+  position: absolute;
+  left: 226.95px;
+  top: 29.06px;
+}
+
+.imageContainer {
+  width: 50%;
+  height: 170px;
+  position: absolute;
+  top: 37.19px;
+  left: 70.46px;
+}
+
+.detail {
+  position: absolute;
+  left: 30px;
+  bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.title {
+  height: 28px;
+  font-weight: 700;
+  font-size: 18.0094px;
+  line-height: 27px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a3556;
+}
+.price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #97da0a;
+}
