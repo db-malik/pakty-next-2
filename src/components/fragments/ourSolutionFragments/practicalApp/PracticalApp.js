@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardPaktyApp } from '../../../cards/cardPaktyApp/CardPaktyApp'
-import classes from './PracticalApp.module.css'
+import classes from './PracticalApp.module.scss'
 
 const PracticalApp = () => {
   return (

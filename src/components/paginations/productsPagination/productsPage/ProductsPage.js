@@ -1,22 +1,25 @@
 import React from 'react'
 import ItemCard from '../../../cards/ItemCard/ItemCard'
 import classes from './ProductsPage.module.css'
-const ProductsPage = ({ items }) => {
+import getUrl from '@/utils/getUrl/GetUrl'
+const ProductsPage = ({ items, products }) => {
   return (
     <div className={classes.container}>
       {items.map((item) => (
-        <ItemCard
-          className={classes.card}
-          src="/assets/img/chair2.png"
-          title={item.entitled}
-          description=""
-          price={item.price}
-          Promoted={false}
-          isLikeable={true}
-          showShop={true}
-          linkTo={`/store/product/${item._id}`}
-          key={item._id}
-        />
+        <div className={classes.cartContainer}>
+          <ItemCard
+            src={item.images[0] ? getUrl(item.images[0]) : '/assets/img/No-Image.png'}
+            title={item.entitled}
+            description=""
+            price={item.price}
+            Promoted={item.promoted}
+            isLikeable={true}
+            showShop={true}
+            linkTo={`/store/product/${item._id}`}
+            key={item._id}
+            _id={item._id}
+          />
+        </div>
       ))}
     </div>
   )

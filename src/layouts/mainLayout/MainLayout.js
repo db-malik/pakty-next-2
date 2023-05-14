@@ -1,11 +1,12 @@
 import Footer from '../../components/fragments/footer/Footer'
 import Header from '../../components/fragments/header/Header'
 import classes from './MainLayout.module.css'
+
 const MainLayout = ({ children }) => {
   return (
-    <div>
+    <div className={classes.container}>
       <Header />
-      <div>{children}</div>
+      <div className={classes.children}>{children}</div>
       <Footer />
     </div>
   )

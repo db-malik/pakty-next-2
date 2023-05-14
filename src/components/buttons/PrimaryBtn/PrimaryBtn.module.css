@@ -2,12 +2,19 @@
   text-transform: uppercase !important;
   background-color: #11f4bd;
   border-color: #11f4bd;
+  border-radius: 8px;
   color: #0a3556;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .has-link {
-  position: absolute;
   margin-top: 3px;
   margin-left: 16px;
 }

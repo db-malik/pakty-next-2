@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import CardBigMedia from '../../../cards/cardBigMedia/cardBigMedia'
 
-import classes from './BecomePro.module.css'
+import classes from './BecomePro.module.scss'
 
 const BecomePro = () => {
   return (

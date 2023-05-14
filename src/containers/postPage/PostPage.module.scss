@@ -1,0 +1,103 @@
+.postContainer {
+  padding: 150px 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 600px auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'imageContainer'
+    'article'
+    'youmyAlsoLike';
+
+  .imageContainer {
+    grid-area: imageContainer;
+    position: relative;
+  }
+
+  .article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'topPost topPost'
+      'section sectionImage'
+      'bottum bottum';
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #112b3c;
+    .topPost {
+      position: relative;
+      grid-area: topPost;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 20px;
+
+      .date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #7c8b94;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 100%;
+        color: #0a3556;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .authorName {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #112b3c;
+        }
+        .authorImage {
+          position: relative;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+    .section {
+      grid-area: section;
+      position: relative;
+      .sectionTitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        color: #0a3556;
+        margin: 20px 0 30px 0;
+      }
+    }
+
+    .sectionImage {
+      position: relative;
+      grid-area: image;
+      grid-area: sectionImage;
+    }
+
+    .bottum {
+      grid-area: bottum;
+    }
+  }
+  .youmyAlsoLike {
+    position: relative;
+    height: 500px;
+    grid-area: youmyAlsoLike;
+  }
+}

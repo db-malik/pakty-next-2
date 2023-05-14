@@ -1,1 +1,10 @@
-
+.collectionContainer {
+  position: relative;
+}
+.cardMediaContainer {
+  position: relative;
+}
+.cardContainer,
+.contactUsContainer {
+  padding: 100px;
+}

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.title {
+  font-size: 20px;
+  line-height: 95.6%;
+  color: #112b3c;
+}
+.selectedNumbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}

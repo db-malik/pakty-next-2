@@ -1,0 +1,95 @@
+.container {
+  padding: 100px;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #eaf9fa 100%);
+
+
+  .backBtnContainer {
+    position: absolute;
+    top: 150;
+    left: 100;
+  }
+
+  .detailContainer {
+    display: flex;
+    padding: 50px 0 100px 0;
+    gap: 50px;
+  }
+
+  .imageContainer {
+    height: 500px;
+    flex: 1;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    filter: drop-shadow(4px 6px 40px rgba(0, 0, 0, 0.05));
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .content {
+    flex: 1;
+    justify-content: space-between;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .articleTitleLarge {
+    color: #0a3556;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .articleTitle {
+    color: #0a3556;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .author {
+    display: flex;
+  }
+  .authorName {
+    align-self: center;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  .authorImage {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    box-shadow: 6.53714px 6.53714px 16.3429px rgba(0, 14, 46, 0.05);
+    border-radius: 8px;
+  }
+  .blog {
+    font-size: 15px !important;
+    text-align: left;
+    width: 444px;
+  }
+
+  .inspirationIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0a3556;
+    .icon {
+      cursor: pointer;
+    }
+  }
+
+  .productsContainer {
+    padding: 60px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btnStyle {
+    background-color: #ffffff;
+    border: 1px solid #0a3556;
+    border-radius: 4px;
+    width: 445px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

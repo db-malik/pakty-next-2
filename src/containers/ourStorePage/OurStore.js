@@ -1,41 +1,62 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ButtonsStoreFilter } from '../../../data/filterData'
 import BtnNumberPage from '../../components/buttons/btnNumberPage/BtnNumberPage'
 import Filter from '../../components/filter/Filter'
 import Slider from '../../components/fragments/comonFragment/slider/Slider'
 import ProductsPage from '../../components/paginations/productsPagination/productsPage/ProductsPage'
+import { Pagination, PaginationItem } from '@mui/material'
+
 import { paginate } from '../../utils/paginate/paginate'
 import classes from './OurStore.module.css'
-import { allProductData } from '/data/ProductsData'
 
 const OurStore = () => {
-  const [pageNumber, setPageNumber] = useState(1)
-  const productsOnPage = paginate(allProductData, pageNumber, 16)
-  const numberOfPages = Math.round(allProductData.length / 16)
 
-  const goToPage = (index) => {
-    setPageNumber(index)
+  const [pageNumber, setPageNumber] = useState(1)
+  const [products, setProducts] = useState([])
+  const productsOnPage = paginate(products, pageNumber, 16)
+  const numberOfPages = Math.round(products.length / 16)
+
+  const [selectedFilterId, setSelectedFilterId] = useState(null);
+
+  const handleChange = (event, value) => {
+    setPageNumber(value)
+    // Do something with the page number here, such as navigating to a specific page
   }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const Data = localStorage.getItem('products')
+      setProducts(JSON.parse(Data))
+    }
+  }, [])
+
+
+  const handleFilterSelect = (filterId) => {
+    setSelectedFilterId(filterId);
+   };
+
+
+
 
   return (
     <div>
-      <Slider
-        title="Discover our store and explore more about 3D furniture."
-        image="/assets/img/store.png"
-        content=""
-      />
+      <Slider widthContent="500px" title="Discover our store and explore more about 3D furniture." image="/assets/img/store.png" content="" />
       <div className={classes.containerColored}>
-        <Filter title="Filter your product" buttons={ButtonsStoreFilter} />
+        <Filter onFilterSelect={handleFilterSelect} title="Filter your product" buttons={ButtonsStoreFilter} />
 
-        <ProductsPage items={productsOnPage} />
-        {/* <ProductsPagination allItems={allProductData} pageSize={16} /> */}
+        <div className={classes.mainContainer}>
 
-        <div className={classes.paginationContainer}>
-          {new Array(numberOfPages).fill(null).map((_, index) => (
-            <BtnNumberPage onClick={() => goToPage(index + 1)} key={index}>
-              {index + 1}
-            </BtnNumberPage>
-          ))}
+          <ProductsPage filterId={selectedFilterId} products={products} items={productsOnPage} />
+
+          <div className={classes.paginationContainer}>
+            <Pagination
+              count={numberOfPages}
+              variant="outlined"
+              shape="rounded"
+              onChange={handleChange} // Handle page change events
+            />
+
+          </div>
+         
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import { Button, Col, Input, Layout, List, Row } from 'antd'
-import classes from './Footer.module.css'
+import classes from './Footer.module.scss'
 import { useLocation } from 'react-router-dom'
 
 import FeatherIcon from 'feather-icons-react'
@@ -10,6 +10,7 @@ import Link from 'next/link'
 
 const logo = require('../../../assets/img/light-logo.png')
 import Image from 'next/image'
+import PrimaryBtn from '../../buttons/PrimaryBtn/PrimaryBtn'
 const { Footer } = Layout
 
 const FooterComponent = () => {
@@ -17,23 +18,22 @@ const FooterComponent = () => {
   const router = useRouter()
   return (
     <Footer className={classes.container}>
-      <div className={classes.left}>
+      <div className={classes.leftContainer}>
         <div className={classes.imageContainer}>
           <Image src="/assets/img/light-logo.png" alt="logo" fill />
         </div>
 
-        <p>
+        <p className={classes.address}>
           pakty@gmail.com <br />
           15 rue du meuble, Tunis 2015 <br />
           +216 25 26 27 26
         </p>
         <div className={classes.socialIcons}></div>
       </div>
-      <div className={classes.midle}>
+      <div className={classes.midleContainer}>
         <List className={classes.about}>
           <List.Item className={classes.footerItemTitle}>About</List.Item>
           <List.Item className={classes.footerItem}>
-            {' '}
             <Link href="/inspiration"> Inspiration </Link>
           </List.Item>
           <List.Item className={classes.footerItem}>
@@ -76,8 +76,8 @@ const FooterComponent = () => {
           </List.Item>
         </List>
       </div>
-      <div className={classes.right}>
-        <List>
+      <div className={classes.rightContainer}>
+        <List className={classes.input}>
           <List.Item className={classes.footerItemTitle}>
             Subscribe Now
           </List.Item>
@@ -88,15 +88,21 @@ const FooterComponent = () => {
               placeholder="Your Email"
               prefix={<FeatherIcon className="text-green" icon={'mail'} />}
             />
-            <div className={classes.btnContainer}>
-              <Button className="pakty-btn-primary">
-                <FeatherIcon
-                  className="text-white"
-                  icon="arrow-right"
-                  style={{ color: '#fff' }}
-                />
-              </Button>
-            </div>
+          </List.Item>
+        </List>
+        <List className={classes.btnContainer}>
+          <List.Item>
+            <PrimaryBtn
+              style={`${classes.btnStyle}`}
+              showArrow={false}
+              linkTo="#"
+            >
+              <FeatherIcon
+                className="text-white"
+                icon="arrow-right"
+                style={{ color: '#fff' }}
+              />
+            </PrimaryBtn>
           </List.Item>
         </List>
       </div>

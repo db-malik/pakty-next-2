@@ -1,60 +1,56 @@
+.container{
+  position: relative;
+}
 .cardContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: clamp(200px, 25vw, 280px);
+  position: relative;
+  width: 277px;
   height: 350.91px;
-  padding: 4px 2px 20px 2px;
-  background-color: #ffffff;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+
   border: 0.965274px solid #e6e6e6;
-  box-shadow: 3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.2);
+  box-shadow: 3.8611px 5.79164px 38.611px rgba(0, 0, 0, 0.05);
   border-radius: 15.4444px;
 }
-.upperContent {
-  z-index: 99;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .likeButtonContainer {
+  position: absolute;
+  left: 226.95px;
+  top: 29.06px;
+  z-index: 999;
 }
 
 .imageContainer {
-  position: relative;
-  height: 40%;
-  width: 40%;
-}
-.BottumContent {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 90%;
-}
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 5px;
-  width: 90%;
+  position: absolute;
+  top: 64.29px;
+  left: 64px;
+  width: 151.82px;
+  height: 162px;
 }
 
 .price {
-  font-size: 18px;
+  text-align: left;
+  position: absolute;
+  height: 18px;
+  left: 14.25px;
+  top: 318.79px;
+  font-style: normal;
   font-weight: 700;
-  color: #97da0a !important;
+  font-size: 17.0826px;
+  line-height: 17px;
+  color: #97da0a;
 }
 
 .title {
-  font-size: 18px;
-  color: #0a3556;
-  width: 141px;
+  text-align: left;
+  position: absolute;
+  height: 18px;
+  left: 14.25px;
+  top: 293.16px;
   font-style: normal;
   font-weight: 600;
   font-size: 14.2355px;
   line-height: 17px;
+  color: #0a3556;
 }
 
 .description {
@@ -64,4 +60,9 @@
 }
 
 .shopBtnContiner {
+  position: absolute;
+  width: 35.59px;
+  height: 35.59px;
+  left: 229.49px;
+  top: 300.79px;
 }

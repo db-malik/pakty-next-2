@@ -3,11 +3,11 @@ import { useRouter } from 'next/router'
 import ProductDetailPage from '../../../containers/productDetailPage/ProductDetailPage'
 import MainLayout from '../../../layouts/mainLayout/MainLayout'
 
-//lock product
-
-const Product = () => {
+const Product = ({ products }) => {
   const router = useRouter()
-  const { id } = router.query
+  const { _id } = router.query
+  const product = products.filter((item) => item._id === _id)
+
   return (
     <>
       <NextSeo
@@ -18,10 +18,21 @@ const Product = () => {
         image=""
       />
       <MainLayout>
-        <ProductDetailPage productId={id} />
+        <ProductDetailPage product={product} />
       </MainLayout>
     </>
   )
 }
 
 export default Product
+
+export async function getServerSideProps(context) {
+  const res = await fetch('http://pm.basketofart.net:3000/getProducts')
+  const data = await res.json()
+  const products = data.data
+  return {
+    props: {
+      products: products,
+    },
+  }
+}

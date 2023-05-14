@@ -7,12 +7,13 @@
 */
 import Image from 'next/image'
 import PrimaryBtn from '../../buttons/PrimaryBtn/PrimaryBtn'
-import classes from './cardBigMedia.module.css'
+import classes from './cardBigMedia.module.scss'
 
 const CardBigMedia = ({
   title,
   description1,
   description2,
+  description3,
   buttonContent,
   linkTo,
   child,
@@ -24,15 +25,17 @@ const CardBigMedia = ({
       {mediaPosition === 'right' ? (
         <>
           <div className={classes.contentContainer}>
-            <h2 className={classes.title}>{title}</h2>
             <div className={classes.descriptionContainer}>
-              <div> {description1}</div>
+              <h2 className={classes.title}>{title}</h2>
+              {description1}
               <br />
-              <div> {description2}</div>
+              {description2 && { description2 }}
+              <br />
+              {description3 && { description3 }}
             </div>
 
-            <div className={classes.buttonContainer}>
-              <PrimaryBtn showArrow={true} linkTo={linkTo}>
+            <div>
+              <PrimaryBtn style={`${classes.buttonContainer}`} showArrow={true} linkTo={linkTo}>
                 {buttonContent}
               </PrimaryBtn>
             </div>
@@ -50,14 +53,14 @@ const CardBigMedia = ({
           </div>
           <div className={classes.contentContainer}>
             <h2 className={classes.title}>{title}</h2>
-            <div className={classes.descriptionContainer}>
+            <div className={classes.description}>
               <div> {description1}</div>
               <br />
               <div> {description2}</div>
             </div>
 
-            <div className={classes.buttonContainer}>
-              <PrimaryBtn showArrow={true} linkTo={linkTo}>
+            <div className={classes.button}>
+              <PrimaryBtn style={`${classes.btnStyle}`} showArrow={true} linkTo={linkTo}>
                 {buttonContent}
               </PrimaryBtn>
             </div>

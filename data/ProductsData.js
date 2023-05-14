@@ -15,6 +15,7 @@ export const allProductData = [
       weight: 0,
       _id: '63bc70042c7d2ce19d34fca4',
     },
+    promoted: 20,
     images: ['/assets/img/product/Rectangle6.jpg'],
     colors: ['#FFFFFF'],
     textures: ['string'],
@@ -91,6 +92,7 @@ export const allProductData = [
       weight: 150,
       _id: '63c04fec2c7d2ce19d34feee',
     },
+    promoted: 15,
     images: [
       '/string',
       'http://pm.basketofart.net:3000/static/photo-1673546298974-628966305.jpg',
@@ -164,6 +166,7 @@ export const allProductData = [
       weight: 90,
       _id: '63c0510c2c7d2ce19d34fef6',
     },
+    promoted: 30,
     images: [
       'http://pm.basketofart.net:3000/static/photo-1673546263124-127126789.jpg',
       'http://pm.basketofart.net:3000/static/photo-1673546298974-302493932.jpg',

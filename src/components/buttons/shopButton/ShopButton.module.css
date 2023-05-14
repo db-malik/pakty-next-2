@@ -1,7 +1,10 @@
 .btn-shopping {
-  border-color: transparent;
-  background-color: #0a3556 !important;
+  position: absolute;
   width: 35.59px;
-  height: 36px;
+  height: 34.59px;
+  background: #0a3556;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }

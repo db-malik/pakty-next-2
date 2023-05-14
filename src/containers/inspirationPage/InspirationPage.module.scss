@@ -1,0 +1,19 @@
+.mainContainer {
+  position: relative;
+  padding: 54px 0 123px 0;
+  height: 2800px;
+  .filterContainer {
+    padding: 0 0 60px 100px;
+  }
+  .collectionContainer {
+    position: relative;
+  }
+  .paginationContainer {
+    position: absolute;
+    bottom: 90px;
+    left: calc(50% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

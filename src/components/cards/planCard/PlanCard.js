@@ -16,14 +16,16 @@ import classes from './PlanCard.module.css'
 const PlanCard = ({ plan }) => {
   return (
     <div className={classes.cardContainer}>
-      <Link
-        href={`/plan/${plan._id}`}
-        key={plan._id}
-        className={classes.planContainer}
-      >
+      <Link href={`/plan/${plan._id}`} key={plan._id} className={classes.planContainer}>
         <div className={classes.title}>{plan.title}</div>
-        <div className={classes.price}>{plan.price}</div>
-        <div className={classes.description}>{plan.description}</div>
+        <div className={classes.price}>{plan.price} dt</div>
+        <ul className={classes.description}>
+          {plan.description.map((item, index) => (
+            <li key={index}>
+              <span className={classes.dots}>.</span> {item}
+            </li>
+          ))}
+        </ul>
       </Link>
     </div>
   )

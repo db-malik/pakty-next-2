@@ -1,11 +1,20 @@
 * {
   box-sizing: border-box;
-  /* transition: all 0.5s ease; */
+  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Montserrat;
+  position: relative;
+  width: 100%;
+  max-width: 1440px !important;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+li {
+  list-style: none;
 }
 
 p {
@@ -17,14 +26,17 @@ code {
   font-family: 'Montserrat';
 }
 
-.pakty-btn-primary {
+.lineairBackground {
+  background: linear-gradient(180deg, #ffffff 0%, #eaf9fa 100%);
+}
+
+/* .pakty-btn-primary {
   text-transform: uppercase !important;
-  background-color: #11f4bd;
-  border-color: #11f4bd;
+  background: #11f4bd;
+  border-radius: 8px;
   color: #0a3556;
   font-weight: 600;
-  height: 48px;
-}
+} */
 
 .pakty-btn-outlined {
   text-transform: uppercase !important;
@@ -229,14 +241,12 @@ a {
   font-weight: 700;
 }
 
-.containerWhite {
-  padding: 50px 4%;
+/* .containerWhite {
   background-color: #fff;
 }
 .containerColored {
-  padding: 50px 4%;
-  background-color: #f1f9ff;
-}
+background: linear-gradient(180deg, #FFFFFF 0%, #EAF9FA 100%);
+} */
 /* ********************************** */
 .progreesBarProess {
   padding-left: 0px !important;

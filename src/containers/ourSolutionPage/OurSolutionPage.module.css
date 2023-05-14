@@ -1,3 +1,20 @@
-.containerFragment > * {
-  padding: 40px 0;
+.container {
+  padding: 40px 100px;
+}
+.paktyApp {
+  margin-top: 100px;
+}
+.explore3dContainer {
+  margin-top: 140px;
+}
+.tryOurFreeContainer {
+  position: relative;
+  margin-top: 250px;
+}
+.planContainer {
+  margin-top: 140px;
+}
+.contactUsContainer {
+  margin-top: 50px;
+  margin-bottom: 150px;
 }

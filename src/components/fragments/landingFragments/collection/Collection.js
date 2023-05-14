@@ -7,35 +7,30 @@
  * are provided. It then maps over an array of length numberCardGallery and renders
  * a CardGalery component for each iteration. Finally, if showbtn is true,
  */
-import Link from 'next/link'
 import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import CardGalery from '../../../cards/cardGallery/CardGalery'
-import classes from './Collection.module.css'
+import classes from './Collection.module.scss'
 
-const Collection = ({
-  title,
-  subtitle,
-  numberCardGallery,
-  showbtn,
-  onePageProducts,
-}) => {
+const Collection = ({ title, subtitle, numberCardGallery, showbtn, onePageProducts }) => {
   return (
     <div className={classes.container}>
-      <div className={classes['super-field']}>
-        {title ? <div className={classes['card-title']}>{title}</div> : null}
-        {subtitle ? (
+      {subtitle ? (
+        <div className={classes['super-field']}>
+          <div className={classes['card-title']}>{title}</div>
           <div className={classes['card-sub']}>{subtitle}</div>
-        ) : null}
+        </div>
+      ) : null}
+
+      <div className={classes.galeryContainer}>
+        {new Array(numberCardGallery).fill(null).map((_, index) => {
+          const products = onePageProducts.slice(index * 6, index * 6 + 6)
+          return <CardGalery sixProducts={products} key={index} />
+        })}
       </div>
 
-      {new Array(numberCardGallery).fill(null).map((_, index) => {
-        const products = onePageProducts.slice(index * 6, index * 6 + 6)
-        return <CardGalery sixProducts={products} key={index} />
-      })}
-
       {showbtn === true ? (
-        <div className={classes.BtnContainer}>
-          <PrimaryBtn linkTo={'/inspiration'} children="EXPLORE ALL" />
+        <div className={classes.btnContainer}>
+          <PrimaryBtn style={`${classes.btnStyle}`} linkTo={'/inspiration'} children="EXPLORE ALL" />
         </div>
       ) : null}
     </div>

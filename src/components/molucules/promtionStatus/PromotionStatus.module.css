@@ -1,7 +1,15 @@
 .promoContainer {
-  background-color: #11f4bd;
-  color: #0a3556;
+  position: absolute;
   width: 46px;
-  border-radius: 4px;
   height: 24px;
+  top: 32px;
+  left: 17px;
+  background: #11f4bd;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
