@@ -1,11 +1,13 @@
 .container {
-  margin: 100px;
+  padding: 100px;
   position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #eaf9fa 100%);
+
 
   .backBtnContainer {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 150;
+    left: 100;
   }
 
   .detailContainer {

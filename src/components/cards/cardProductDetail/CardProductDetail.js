@@ -9,6 +9,7 @@ import classes from './CardProductdetail.module.scss'
 // mock data for prodact detail : To Do : replace it with data fetched from API
 import { productDetail } from '/data/oneProductDetail'
 import PlusMinusBtn from '@/components/buttons/plusMinusBtn/PlusMinusBtn'
+import { ImageList, ImageListItem } from '@mui/material'
 
 const CardProductDetail = ({ product }) => {
   const { images, entitled, price, description, category, colors, status } = product[0]
@@ -31,14 +32,19 @@ const CardProductDetail = ({ product }) => {
 
   return (
     <div className={classes.productContainer}>
-      <div className={`${classes.images} `}>
-        {images.length > 0
-          ? images.slice(0, 4).map((image, index) => (
-              <div className={`${classes[`image${index + 1}  image`]}`} key={index} onClick={() => handleImageClick(index)}>
-                <Image src={image} fill alt={`Image ${index}`} />
-              </div>
-            ))
-          : 'null'}
+      <div className={classes.imagesContainer}>
+        <ImageList sx={{ width: 100, height: 'auto', overflow: 'hidden' }} cols={1} gap={54}>
+          {images.slice(0, 4).map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={entitled}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
       </div>
       <div className={classes.selectedImage}>
         <div className={classes.imageContainer}>{clickedIndex !== -1 && <Image src={images[clickedIndex]} fill alt={`Image ${clickedIndex}`} />}</div>

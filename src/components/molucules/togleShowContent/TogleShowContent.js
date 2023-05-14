@@ -9,9 +9,11 @@ import classes from './TogleShowContent.module.css'
 //   information: 'text',
 // }
 
-const TogleShowContent = ({ arrayLinks, content }) => {
+const TogleShowContent = ({ arrayLinks, product }) => {
   const [inerText, setInerText] = useState(arrayLinks[0])
   const [activeIndex, setActiveIndex] = useState(0)
+
+  const content = { description: 'text', information: 'text' }
 
   const handleClick = (link, index) => {
     setInerText(link)
@@ -22,13 +24,7 @@ const TogleShowContent = ({ arrayLinks, content }) => {
     <div className={classes.container}>
       <ul className={classes.navlinks}>
         {arrayLinks.map((link, index) => (
-          <li
-            key={index}
-            onClick={() => handleClick(link, index)}
-            className={`${activeIndex === index ? classes.active : ''}  ${
-              classes.listItem
-            }`}
-          >
+          <li key={index} onClick={() => handleClick(link, index)} className={`${activeIndex === index ? classes.active : ''}  ${classes.listItem}`}>
             {link}
           </li>
         ))}

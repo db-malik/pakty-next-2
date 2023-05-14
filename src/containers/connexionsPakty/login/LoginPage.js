@@ -1,22 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { FcGoogle } from 'react-icons/fc'
 // import { GoogleLogin } from '@react-oauth/google'
 
 import { AiFillEyeInvisible } from 'react-icons/ai'
 
-// import jwt_decode from 'jwt-decode'
-// import { useGoogleLogin } from '@react-oauth/google'
-// import axios from 'axios'
+import jwt_decode from 'jwt-decode'
+import { useGoogleLogin } from '@react-oauth/google'
+import axios from 'axios'
 
 import classes from './Login.module.scss'
 import Logo from '@/components/fragments/header/logo/Logo'
-import PrimaryBtn from '@/components/buttons/PrimaryBtn/PrimaryBtn'
 import Image from 'next/image'
 import Link from 'next/link'
+import useLogin from '@/hooks/useLogin'
+import SubmitButton from '@/components/buttons/submitButton/SubmitButton'
+import { useRouter } from 'next/router'
 
 const LoginPage = () => {
-  // const login = useGoogleLogin({
+  const router = useRouter()
+
+  const [user, setUser] = useState(null)
+  const { login, loading, error } = useLogin()
+  const [passwordType, setPasswordType] = useState('password')
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  })
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    })
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const user = await login(formData.email, formData.password)
+    setUser(user)
+  }
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user))
+      router.push(`/user/dashboard/${user.data._id}`)
+    }
+  }, [user])
+
+  // const loginGoogle = useGoogleLogin({
   //   o./nSuccess: async (respose) => {
   //     try {
   //       const res = await axios.get(
@@ -34,6 +64,10 @@ const LoginPage = () => {
   //     }
   //   },
   // })
+
+  const showHidePassword = () => {
+    setPasswordType(passwordType === 'password' ? 'text' : 'password')
+  }
   return (
     <div class={classes.container}>
       <div class={classes.leftContainer}>
@@ -48,40 +82,48 @@ const LoginPage = () => {
         </div>
         <div class={classes.form}>
           <div class={classes.email}>
-            <input className={classes.inputField} placeholder="Email address" type="text" name="email" value="" />
+            <input className={classes.inputField} placeholder="Email address" type="text" name="email" value={formData.email} onChange={handleChange} />
           </div>
           <div class={classes.password}>
-            <input className={classes.inputField} placeholder="Password" type="password" name="" value="" />
+            <input
+              className={`${classes.inputField} ${classes.password}`}
+              placeholder="Password"
+              type={passwordType}
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
 
-            <AiFillEyeInvisible className={classes.iconShow} />
+            <AiFillEyeInvisible onClick={showHidePassword} className={classes.iconShow} />
           </div>
-          <div class={classes.forgotPassword}>
-            <div className={classes.checkboxContainer}>
-              <div className={classes.checkbox}>
-                <input id="rememberMe" type="checkbox" />
-                <label for="rememberMe">Remember me</label>
-              </div>
-              <Link href="/reset-password" className={classes.links}>
-                Forgot Password
-              </Link>
+
+          <div className={classes.checkboxContainer}>
+            <div className={classes.checkboxRememberMe}>
+              <input id="rememberMe" type="checkbox" />
+              <label for="rememberMe">Remember me</label>
             </div>
+            <Link href="/reset-password" className={classes.forgotPassword}>
+              Forgot Password
+            </Link>
           </div>
+
           <div class={classes.submit}>
-            <PrimaryBtn style={`${classes.btnStyle}`} showArrow={false} linkTo="/user/dashboard">
+            <SubmitButton onClick={handleSubmit} style={`${classes.btnStyle}`} showArrow={false}>
               LOGIN
-            </PrimaryBtn>
+            </SubmitButton>
           </div>
-          <div class={classes.link}>
-            <div className={classes.actionContainer}>
-              <span> Don’t have an account?</span>
-              <Link href="/sign-up" className={classes.links}>
-                Sign up for free
-              </Link>
+
+          <div className={classes.actionContainer}>
+            <span className={classes.noAccount}> Don’t have an account?</span>
+            <Link href="/sign-up" className={classes.links}>
+              Sign up for free
+            </Link>
+          </div>
+          <div className={classes.google}>
+            <span>Or</span>
+            <div class={classes.googleBtn}>
+              <FcGoogle /> <span>Log in with Google</span>
             </div>
-          </div>
-          <div class={classes.or_br}>Or</div>
-          <div class={classes.google}>
-            <FcGoogle /> <span>Log in with Google</span>
           </div>
         </div>
       </div>

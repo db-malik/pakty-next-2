@@ -6,13 +6,10 @@ import PaktyApp from '../../components/fragments/landingFragments/paktyApp/Pakty
 import OurBlog from '../../components/fragments/landingFragments/ourBlog/OurBlog'
 import classes from './LandingPage.module.css'
 
-//mock data
-import { collectionData } from '/data/collectionData'
 import BecomePro from '../../components/fragments/landingFragments/becomePro/BecomePro'
 import SliderLanding from '../../components/fragments/landingFragments/sliderLanding/SliderLanding'
 
 const LandingPage = ({ products, inspirationData }) => {
-  console.log(inspirationData)
   return (
     <div className={classes.container}>
       <SliderLanding
@@ -36,8 +33,9 @@ const LandingPage = ({ products, inspirationData }) => {
       <WhyPakty />
 
       <PaktyApp />
-
-      <OurBlog showTitle={true} />
+      <div className={classes.ourBlogContainer}>
+        <OurBlog showTitle={true} />
+      </div>
 
       <BecomePro />
     </div>

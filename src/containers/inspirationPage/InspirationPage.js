@@ -6,10 +6,13 @@ import Slider from '../../components/fragments/comonFragment/slider/Slider'
 import classes from './InspirationPage.module.scss'
 import { ButtonsInspirationFilter } from '/data/filterData'
 import { paginate } from '../../utils/paginate/paginate'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import BtnNumberPage from '../../components/buttons/btnNumberPage/BtnNumberPage'
 
 //mock data
 import { collectionData } from '/data/collectionData'
+import { Pagination, PaginationItem } from '@mui/material'
 
 const InspirationPage = ({ inspirationData }) => {
   const [pageNumber, setPageNumber] = useState(1)
@@ -17,10 +20,11 @@ const InspirationPage = ({ inspirationData }) => {
 
   const numberOfPages = Math.round(inspirationData.length / 18)
 
-  console.log(numberOfPages)
-  const goToPage = (index) => {
-    setPageNumber(index)
+  const handleChange = (event, value) => {
+    setPageNumber(value)
+    // Do something with the page number here, such as navigating to a specific page
   }
+
   return (
     <div className={classes.container}>
       <Slider
@@ -35,14 +39,16 @@ const InspirationPage = ({ inspirationData }) => {
           <Filter title="Choose the type of the room :" buttons={ButtonsInspirationFilter} />
         </div>
         <div>
-          <Collection className={classes.collectionContainer} onePageProducts={onePageProducts} title="" subtitle="" numberCardGallery={3} />{' '}
+          <Collection className={classes.collectionContainer} onePageProducts={onePageProducts} title="" subtitle="" numberCardGallery={3} />
         </div>
         <div className={classes.paginationContainer}>
-          {new Array(numberOfPages).fill(null).map((_, index) => (
-            <BtnNumberPage isActive={pageNumber === index + 1 ? true : false} onClick={() => goToPage(index + 1)} key={index}>
-              {index + 1}
-            </BtnNumberPage>
-          ))}
+          <Pagination
+            count={numberOfPages}
+            variant="outlined"
+            shape="rounded"
+            onChange={handleChange} // Handle page change events
+            renderItem={(item) => <PaginationItem {...item} />}
+          />
         </div>
       </div>
     </div>

@@ -7,9 +7,19 @@ import Image from 'next/image'
 
 import MainLayout from '../layouts/mainLayout/MainLayout'
 import LandingPage from '../containers/landingPage/LandingPage'
+import getAllCategories from '@/utils/requests/getCategories'
+import getFromAPI from '@/utils/requests/getFromApi'
+import { useEffect } from 'react'
 
-export default function Home({ TOKEN_KEY, products, inspirationData }) {
-  console.log(inspirationData)
+export default function Home({ products, inspirationData, categories }) {
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     // Access localStorage here
+  //     localStorage.setItem('products', JSON.stringify(products))
+  //     localStorage.setItem('categories', JSON.stringify(categories))
+  //     localStorage.setItem('inspiration', JSON.stringify(inspirationData))
+  //   }
+  // }, [])
 
   return (
     <>
@@ -32,26 +42,22 @@ export async function getServerSideProps(context) {
   its justto moch data commented and uncomment
    bloc bellow to fetch data fron API 
   */
-
   const filePath = path.join(process.cwd(), 'data', 'inspiration.json')
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const inspirationData = JSON.parse(fileContents)
-
   /* uncomment this to fetch data from API */
   // const res = await fetch('http://pm.basketofart.net:3000/inspiration')
   // const inspirationData = await res.json()
   // const inspirations = inspirationData.data
 
-  const TOKEN_KEY = process.env.TOKEN_KEY
-
-  const res = await fetch('http://pm.basketofart.net:3000/getProducts')
-  const products = await res.json()
-
+  const categories = await getAllCategories('productcategories')
+  const data = await getFromAPI('getProducts')
+  const products = data.data
   return {
     props: {
       inspirationData: inspirationData.data.products,
-      products: products.data,
-      TOKEN_KEY,
+      products: products,
+      categories: categories.data,
     },
   }
 }

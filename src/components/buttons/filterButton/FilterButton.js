@@ -8,10 +8,13 @@ import React from 'react'
 import { Button } from 'antd'
 import classes from './FilterButton.module.css'
 import Image from 'next/image'
+import {setToLocalStorage} from '../../../hooks/useLocalStorage'
+const FilterButton = ({ iconSrc, label,onClick }) => {
 
-const FilterButton = ({ iconSrc, label }) => {
+ 
+
   return (
-    <Button className={classes.container} size="large">
+    <Button onClick={onClick} className={classes.container} size="large">
       {iconSrc ? (
         <span className={classes.iconContainer}>
           <Image

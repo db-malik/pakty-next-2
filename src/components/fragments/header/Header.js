@@ -14,7 +14,7 @@ const navItem = [
   { label: 'Our Store', link: '/store' },
   { label: 'Magazine', link: '/magazine' },
   { label: 'Solution', link: '/our-solution' },
-  // { label: 'Become Pro', link: '/become-pro' },
+  { label: 'Become Pro', link: '/become-pro' },
 ]
 
 const Header = () => {

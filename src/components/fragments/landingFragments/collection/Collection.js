@@ -7,13 +7,11 @@
  * are provided. It then maps over an array of length numberCardGallery and renders
  * a CardGalery component for each iteration. Finally, if showbtn is true,
  */
-import Link from 'next/link'
 import PrimaryBtn from '../../../buttons/PrimaryBtn/PrimaryBtn'
 import CardGalery from '../../../cards/cardGallery/CardGalery'
 import classes from './Collection.module.scss'
 
 const Collection = ({ title, subtitle, numberCardGallery, showbtn, onePageProducts }) => {
-  console.log(onePageProducts)
   return (
     <div className={classes.container}>
       {subtitle ? (

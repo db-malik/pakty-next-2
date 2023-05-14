@@ -9,7 +9,6 @@ import RoundedButton from '@/components/buttons/roudedArrow/RoundedArrowLeft'
 import RoundedArrowLeft from '@/components/buttons/roudedArrow/RoundedArrowLeft'
 import RoundedArrowRight from '@/components/buttons/roudedArrow/RoundedArrowRight'
 import getUrl from '@/utils/getUrl/GetUrl'
-const imgSrc = require('/src/assets/img/card-image.jpg')
 
 const OurShop = ({ products }) => {
   const [selectedProduct, setSelectedProduct] = useState(4)
@@ -23,7 +22,6 @@ const OurShop = ({ products }) => {
     }
   }
 
-  console.log(products)
   return (
     <div className={classes.container}>
       <div className={classes.title}>Our Shop</div>

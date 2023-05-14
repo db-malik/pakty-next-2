@@ -31,7 +31,7 @@ const InspirationDetailPage = ({ selectedProduct }) => {
   }, [author.image])
 
   return (
-    <div className={`${classes.container}   lineairBackground`}>
+    <div className={classes.container}>
       <div className={classes.backBtnContainer}>
         <BackButton />
       </div>

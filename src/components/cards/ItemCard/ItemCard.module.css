@@ -1,3 +1,6 @@
+.container{
+  position: relative;
+}
 .cardContainer {
   position: relative;
   width: 277px;
@@ -13,6 +16,7 @@
   position: absolute;
   left: 226.95px;
   top: 29.06px;
+  z-index: 999;
 }
 
 .imageContainer {
@@ -26,7 +30,6 @@
 .price {
   text-align: left;
   position: absolute;
- 
   height: 18px;
   left: 14.25px;
   top: 318.79px;

@@ -58,6 +58,7 @@
 .button {
   grid-area: button;
   position: relative;
+  margin-top: 10px;
 }
 .btnStyle {
   font-weight: 600;

@@ -9,12 +9,18 @@
 import { Button } from 'antd'
 import FeatherIcon from 'feather-icons-react'
 import classes from './LikeButton.module.css'
+import { useState } from "react"
 
-const LikeButton = ({ className }) => {
+const LikeButton = ( ) => {
+  const [likes, setLikes] = useState(false)
+ const  likeHandler= ()=>{
+  setLikes(!likes)
+ }
   return (
     <Button
+    style={likes? {backgroundColor: '#11F4BD' }: null}
       className={classes['like-Button']}
-      icon={<FeatherIcon icon="heart" size={18} />}
+      icon={<FeatherIcon icon="heart" size={18} onClick={likeHandler} />}
     ></Button>
   )
 }

@@ -13,12 +13,12 @@ const OtherProducts = ({ products }) => {
           <ItemCard
             src={product.image}
             title={product.entitled}
-            description=""
-            price={product.price}
-            Promoted={false}
-            isLikeable={true}
-            showShop={true}
-            linkTo={product._id}
+             description=""
+          //   price={product.price}
+             Promoted={false}
+             isLikeable={true}
+             showShop={true}
+             linkTo={product._id}
           />
         ))}
       </div>

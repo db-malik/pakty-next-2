@@ -6,11 +6,8 @@ import MainLayout from '../../../layouts/mainLayout/MainLayout'
 const Product = ({ products }) => {
   const router = useRouter()
   const { _id } = router.query
-  console.log(products)
-  console.log(_id)
   const product = products.filter((item) => item._id === _id)
 
-  console.log(product)
   return (
     <>
       <NextSeo

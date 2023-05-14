@@ -27,7 +27,9 @@ const OurSolutionPage = () => {
         buttonLabel=""
       />
       <div className={`${classes.container} lineairBackground`}>
-        <DownloadPaktyApp />
+        <div className={classes.paktyApp}>
+          <DownloadPaktyApp />
+        </div>
         <PracticalApp />
         <div className={classes.explore3dContainer}>
           <Explore3D />

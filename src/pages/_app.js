@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 import { DefaultSeo } from 'next-seo'
+import { Provider } from 'react-redux'
+import { store } from '../store/store'
 
 function App({ Component, pageProps }) {
   return (
@@ -14,8 +16,9 @@ function App({ Component, pageProps }) {
           siteName: 'SiteName',
         }}
       />
-
-      <Component {...pageProps} />
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </>
   )
 }

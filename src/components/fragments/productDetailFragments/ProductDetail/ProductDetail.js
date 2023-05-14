@@ -14,10 +14,7 @@ const ProductDetail = ({ product }) => {
   return (
     <div className={classes.container}>
       <CardProductDetail product={product} />
-      {/* <TogleShowContent
-        arrayLinks={['description', 'information']}
-        content={content}
-      /> */}
+      <TogleShowContent arrayLinks={['description', 'information']} product={product} />
     </div>
   )
 }

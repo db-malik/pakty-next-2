@@ -3,9 +3,11 @@ import { Button, Col, Form, Input, Radio, Row } from 'antd'
 
 import Slider from '../../components/fragments/comonFragment/slider/Slider'
 import classes from './BecomeProPage.module.scss'
+import SubmitButton from '@/components/buttons/submitButton/SubmitButton'
 const { TextArea } = Input
 
 const BecomeProPage = () => {
+  const handleSubmit = () => {}
   return (
     <>
       <Slider
@@ -18,11 +20,9 @@ const BecomeProPage = () => {
       />
       <div className={`${classes.container}   lineairBackground`}>
         <p className={classes.desc}>
-          Pakty team can help you , Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Vitae risus, lorem amet aliquam libero mauris magna
-          ac.{' '}
+          Pakty team can help you , Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae risus, lorem amet aliquam libero mauris magna ac.{' '}
         </p>
-        <Form>
+        <Form className={classes.form}>
           <Form.Item>
             <Input placeholder="Company name" />
           </Form.Item>
@@ -44,21 +44,21 @@ const BecomeProPage = () => {
           <Row>
             <Col span={24}>
               <Form.Item>
-                <Radio>Is your brand registered?</Radio>
+                <Radio className={classes.text}>Is your brand registered?</Radio>
               </Form.Item>
             </Col>
-            <Col span={24}>
-              You must register your trademark, is not too difficult to do Lorem
-              ipsum dolor sit amet
+            <Col style={{ marginBottom: '20px' }}>
+              <span className={classes.text} span={24}>
+                You must register your trademark, is not too difficult to do Lorem ipsum dolor sit amet
+              </span>
             </Col>
           </Row>
           <Form.Item>
             <TextArea placeholder="Message" rows={15} />
           </Form.Item>
-          <Button block className="pakty-btn-primary">
-            {' '}
+          <SubmitButton onClick={handleSubmit} style={`${classes.btnStyle}`} showArrow={false}>
             SEND REQUEST
-          </Button>
+          </SubmitButton>
         </Form>
       </div>
     </>

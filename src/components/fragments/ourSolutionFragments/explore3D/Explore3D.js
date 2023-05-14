@@ -6,10 +6,10 @@ import CardItemCollection from '../../../cards/cardItemCollection/CardItemCollec
 import classes from './Explore3D.module.scss'
 
 const images = [
-  '/assets/img/collections/Image_container-1.jpg',
-  '/assets/img/collections/Image_container-2.jpg',
-  '/assets/img/collections/Image_container-3.jpg',
-  '/assets/img/collections/Image_container-4.jpg',
+  '/assets/img/inspiration/image-inspiration-1.png',
+  '/assets/img/inspiration/image-inspiration-2.png',
+  '/assets/img/inspiration/image-inspiration-3.png',
+  '/assets/img/inspiration/image-inspiration-4.png',
 ]
 
 const Explore3D = () => {

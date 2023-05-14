@@ -16,37 +16,41 @@ const PostPage = ({ postData }) => {
   const { date, author, title, image, introduction1, introduction2, section, endPost } = postData
 
   return (
-    <div className={classes.container}>
+    <div className={classes.postContainer}>
       <div className={classes.imageContainer}>
         <Image src={image} fill alt="post image" />
       </div>
 
       <div className={classes.article}>
-        <div className={classes.articleInfo}>
+        <div className={classes.topPost}>
           <div className={classes.date}>{date}</div>
           <div className={classes.title}>{title}</div>
           <div className={classes.author}>
-            <span className={classes.authorImage}>
+            <div className={classes.authorImage}>
               <Image src={author.image} fill />
-            </span>
+            </div>
             <span className={classes.authorName}>{author.name}</span>
           </div>
+          <div className={classes.articleContent}>
+            <div>{introduction1}</div>
+            <br />
+            <div>{introduction2}</div>
+          </div>
         </div>
-        <div className={classes.articleContent}>
-          <div>{introduction1}</div>
-          <br />
-          <div>{introduction2}</div>
+        <div className={classes.section}>
+          <div className={classes.sectionTitle}>{section.title}</div>
+          <div className={classes.sectionContent}>{section.content}</div>
         </div>
-      </div>
-      <div className={classes.section}>
-        <div className={classes.left}></div>
-        <div className={classes.right}></div>
+        <div className={classes.sectionImage}>
+          <Image src={section.image} fill alt="post-image" />
+        </div>
+        <div className={classes.bottum}>{endPost}</div>
       </div>
       <div className={classes.youmyAlsoLike}>
         <ExploreAllBar label="Also you may like" linkTo={'/magazine'} />
-      </div>
-      <div className={classes.other}>
-        <OurBlog />
+        <div className={classes.other}>
+          <OurBlog />
+        </div>
       </div>
     </div>
   )

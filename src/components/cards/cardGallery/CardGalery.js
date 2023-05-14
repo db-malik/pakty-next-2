@@ -3,14 +3,11 @@
    - 6 images
 */
 
-import Image from 'next/image'
-import Link from 'next/link'
 import classes from './CardGalery.module.scss'
 
 import CardItemCollection from '../cardItemCollection/CardItemCollection'
 
 const CardGalery = ({ sixProducts }) => {
-  console.log(sixProducts)
   return (
     <div className={classes.container}>
       {sixProducts.map((item, index) => (
